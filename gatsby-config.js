@@ -5,8 +5,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `gmlunesa`,
-    description: `Official site of Goldy Mariz Lunesa (gmlunesa), gmlunesa.com`,
+    description: `Official site of Goldy Mariz Lunesa`,
     author: `@gmlunesa`,
+    icon: `src/images/gmlunesa-favicon.png`,
   },
   plugins: [
     {
