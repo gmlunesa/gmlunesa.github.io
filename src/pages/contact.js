@@ -22,9 +22,9 @@ const ContactPage = () => (
           <div className="col-md-8">
             <h1>Projects++</h1>
             <p>
-              Hey there! Do you want to code and collaborate? Or do you have an
-              opportunity in which I can help? Send me a message! You can also
-              reach me through the following links:
+              Hey there! Do you want to code and collaborate? Or do you have any
+              questions or comments? Send me a message! You can also reach me
+              through the following links:
             </p>
             <ul className="list-group list-group-horizontal">
               <li className="list-group-item">
@@ -38,7 +38,7 @@ const ContactPage = () => (
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="https://linkedin.com/gmlunesa">
+                <a href="https://linkedin.com/in/gmlunesa">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>

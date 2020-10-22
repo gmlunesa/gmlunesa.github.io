@@ -52,7 +52,7 @@ export default class Footer extends Component {
                     </li>
                     <li className="list-inline-item mr-4">
                       <a
-                        href="https://linkedin.com/gmlunesa"
+                        href="https://linkedin.com/in/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
                       >

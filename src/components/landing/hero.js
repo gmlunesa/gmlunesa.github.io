@@ -77,7 +77,7 @@ export default function Hero() {
                     </li>
                     <li className="list-group-item">
                       <a
-                        href="https://linkedin.com/gmlunesa"
+                        href="https://linkedin.com/in/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
                       >
