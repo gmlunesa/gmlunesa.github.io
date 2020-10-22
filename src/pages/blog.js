@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => (
               <Link to={fields.slug} key={fields.slug}>
                 <div className="card">
                   <div className="card-body">
-                    <div className="col-6" key={id}>
+                    <div className="col-8" key={id}>
                       {frontmatter.title}
                     </div>
                   </div>
