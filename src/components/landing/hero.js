@@ -29,7 +29,7 @@ export default function Hero() {
               </p>
               <a
                 href="#content"
-                className="hero-button btn btn-primary shadow-lg"
+                className="hero-button btn btn-primary shadow-sm"
               >
                 Get to know me
               </a>
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
           <div className="col-lg-4 my-auto">
             <div className="hero-bio">
-              <div className="card shadow mb-5">
+              <div className="card shadow-sm mb-5">
                 <div className="card-body">
                   <div className="icon">
                     <Image

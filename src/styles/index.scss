@@ -241,7 +241,7 @@ section.content {
           transition: background-color 0.5s ease-in-out;
           height: 15px;
           width: 15px;
-          background-color: #bbb;
+          background-color: var(--contrast);
           border-radius: 50%;
           display: inline-block;
           margin-bottom: 5px;
@@ -269,7 +269,7 @@ section.content {
         h1 {
           .dot {
             background-color: var(--link-secondary);
-            opacity: 100%;
+            opacity: 1;
             // COMMENT: Highlight code
             // background-size: 100% 100%;
             // font-style: oblique;
