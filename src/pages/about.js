@@ -65,7 +65,11 @@ const AboutPage = ({ data }) => (
             </div>
           </div>
           <div className="col-lg-6 my-auto mx-auto">
-            <Image fileName="ahagon.jpg" alt="" className="about-img-wrapper" />
+            <Image
+              fileName="ahagon.jpg"
+              alt="Ahagon New Game"
+              className="about-img-wrapper"
+            />
           </div>
           <div className="col-lg-7">
             <div className="card">
@@ -85,6 +89,7 @@ const AboutPage = ({ data }) => (
                   currently deployed in NCR is very complex and multi-layered.
                   Hence, both defect solution and functionality implementations
                   are challenging and fullfilling to do.
+                  <br />
                   <br />
                   Going through Agile workflows in my past and current
                   employement, I have experienced multiple roles in a team.

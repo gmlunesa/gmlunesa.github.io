@@ -2,6 +2,8 @@ import React from "react"
 
 import Image from "../image"
 
+import { Link } from "react-scroll"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -27,12 +29,13 @@ export default function Hero() {
                 Nice to meet you! I am Goldy Mariz, and I write code for a
                 living. Currently open for interesting collaborations!
               </p>
-              <a
-                href="#content"
+              <Link
+                to="content"
                 className="hero-button btn btn-primary shadow-sm"
+                smooth={true}
               >
                 Get to know me
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 my-auto">

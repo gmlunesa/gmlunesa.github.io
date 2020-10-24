@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", "Arial", "sans-serif";
+  font-weight: 450;
   background-color: var(--primary);
   color: var(--base);
 
@@ -25,7 +26,7 @@ body {
   --text-on-link: #ffffff;
 
   ::selection {
-    color: var(--base);
+    color: var(--text-on-link);
     background-color: var(--link-tertiary);
   }
   h1 {
@@ -45,14 +46,15 @@ body {
   }
 
   h6 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--contrast);
-    opacity: 0.5;
+    opacity: 0.75;
   }
 
   p {
     font-size: 1.15rem;
     color: var(--contrast);
+    font-weight: 600;
   }
 
   a {
@@ -69,30 +71,18 @@ body {
 
 body.light {
   --primary: #ffffff;
-  --secondary: #fafafa;
+  --secondary: #f7fafc;
   // --tertiary: #e4e3e1;
-  --tertiary: #f3f3f3;
+  --tertiary: #e2e8f0;
   --complement: #f8e6ff;
   --extra: #ededed;
 
   --base: #000000;
   --contrast: #3c3c3c;
-
-  --bg: #fff;
-  --header: #000;
-  --textNormal: #222;
-  --textTitle: #222;
-  --textLink: #ff2e74;
-  --inlineLink: #ff6150;
-  --hr: hsla(0, 0%, 0%, 0.2);
-  --inlineCode-bg: rgba(255, 229, 100, 0.2);
-  --inlineCode-text: #1a1a1a;
-  --hover: #fcf113;
 }
 
 body.dark {
   -webkit-font-smoothing: antialiased;
-  // New ones
 
   // Backgrounds
   --primary: #000000;
@@ -104,17 +94,6 @@ body.dark {
   // Text
   --base: #ffffff;
   --contrast: #c3c3c3;
-
-  --bg: #282c35;
-  --header: #fff;
-  --textNormal: rgba(255, 255, 255, 0.88);
-  --textTitle: #fff;
-  --textLink: #d23669;
-  --inlineLink: #ff6150;
-  --hr: hsla(0, 0%, 100%, 0.2);
-  --inlineCode-bg: rgba(67, 97, 149, 0.5);
-  --inlineCode-text: #e6e6e6;
-  --hover: #8c61ff;
 }
 
 nav {

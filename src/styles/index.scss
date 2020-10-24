@@ -1,12 +1,7 @@
 ////////////////////////////////////////////// Hero Section ////////////////////////////////////////////////////////////
 
 section.hero {
-  // height: 100vh;
-  // padding-top: 6rem;
-
   .hero-introduction {
-    // max-width: 500px;
-    // margin-bottom: 100px;
     text-align: center;
     h1 {
       font-weight: 800;
@@ -180,13 +175,6 @@ section.content {
         background-position: 0 95%;
       }
     }
-
-    h6 {
-      font-size: 1rem;
-      color: var(--contrast);
-      opacity: 0.5;
-    }
-
     .card {
       border: 0.5rem solid var(--tertiary);
       background-color: var(--secondary);
