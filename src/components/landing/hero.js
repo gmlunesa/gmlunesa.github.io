@@ -45,7 +45,7 @@ export default function Hero() {
                   <div className="icon">
                     <Image
                       fileName="gmlunesa-pic.jpg"
-                      style={{ width: "10rem", height: "10rem" }}
+                      style={{ width: "5rem", height: "5rem" }}
                       alt=""
                     />
                   </div>

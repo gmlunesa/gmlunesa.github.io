@@ -1,5 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "../../node_modules/typeface-montserrat/index.css";
+//@import "../../node_modules/typeface-montserrat/index.css";
 
 @import "../styles/index.scss";
 @import "../styles/about.scss";
@@ -13,6 +13,9 @@ body {
   font-weight: 450;
   background-color: var(--primary);
   color: var(--base);
+
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+  //transition: color 0.3s ease-in;
 
   -webkit-tap-highlight-color: transparent;
 
@@ -111,7 +114,7 @@ nav {
       color: var(--link-primary);
     }
     font-weight: 800;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .navbar-toggler {

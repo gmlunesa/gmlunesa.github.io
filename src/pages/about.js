@@ -243,24 +243,4 @@ const AboutPage = ({ data }) => (
   </Layout>
 )
 
-export const squareImage = graphql`
-  fragment squareImage on File {
-    childImageSharp {
-      fluid(maxWidth: 200, maxHeight: 200) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
-export const query = graphql`
-  query {
-    image1: file(relativePath: { eq: "images/rei.jpg" }) {
-      ...squareImage
-    }
-    image2: file(relativePath: { eq: "images/hal.jpg" }) {
-      ...squareImage
-    }
-  }
-`
 export default AboutPage

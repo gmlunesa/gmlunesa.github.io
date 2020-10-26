@@ -154,6 +154,7 @@ section.hero {
 section.content {
   padding: 75px 0;
   background-color: var(--secondary);
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
   .subsection {
     h1 {
