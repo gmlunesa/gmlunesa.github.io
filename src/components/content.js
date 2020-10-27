@@ -43,18 +43,18 @@ export default class Content extends Component {
                   <div className="card">
                     <div className="card-body">
                       <div className="card-title">
-                        <h5>NCR Corporation</h5>
-                        <h6>
+                        <h3>NCR Corporation</h3>
+                        <h4>
                           <FontAwesomeIcon
                             icon={faBriefcase}
                             className="mr-2"
                           />{" "}
                           Software Engineer
-                        </h6>
-                        <h6>
+                        </h4>
+                        <h4>
                           <FontAwesomeIcon icon={faCalendar} className="mr-2" />{" "}
                           Jul 2018 - Present
-                        </h6>
+                        </h4>
                       </div>
 
                       <div className="card-text">
@@ -80,7 +80,7 @@ export default class Content extends Component {
                       <div className="card">
                         <div className="card-body">
                           <div className="card-title">
-                            <h5>Languages</h5>
+                            <h3>Languages</h3>
                           </div>
 
                           <div className="card-text">
@@ -139,7 +139,7 @@ export default class Content extends Component {
                       <div className="card">
                         <div className="card-body">
                           <div className="card-title">
-                            <h5>Workflows</h5>
+                            <h3>Workflows</h3>
                           </div>
 
                           <div className="card-text">
@@ -159,7 +159,7 @@ export default class Content extends Component {
                       <div className="card">
                         <div className="card-body">
                           <div className="card-title">
-                            <h5>Frameworks</h5>
+                            <h3>Frameworks</h3>
                           </div>
 
                           <div className="card-text">
@@ -193,7 +193,7 @@ export default class Content extends Component {
                       <div className="card">
                         <div className="card-body">
                           <div className="card-title">
-                            <h5>Technologies</h5>
+                            <h3>Technologies</h3>
                           </div>
 
                           <div className="card-text">
@@ -252,21 +252,21 @@ export default class Content extends Component {
                   <div className="card">
                     <div className="card-body">
                       <div className="card-title">
-                        <h5>University of the Philippines Cebu</h5>
-                        <h6>
+                        <h3>University of the Philippines Cebu</h3>
+                        <h4>
                           <FontAwesomeIcon
                             icon={faGraduationCap}
                             className="mr-2"
                           />
                           Computer Science
-                        </h6>
-                        <h6>
+                        </h4>
+                        <h4>
                           <FontAwesomeIcon
                             icon={faUserGraduate}
                             className="mr-2"
                           />{" "}
                           Jun 2018
-                        </h6>
+                        </h4>
                       </div>
 
                       <div className="card-text">
@@ -290,14 +290,14 @@ export default class Content extends Component {
                         <div className="card mb-4">
                           <div className="card-body">
                             <div className="card-title">
-                              <h5>{node.project}</h5>
-                              <h6>
+                              <h3>{node.project}</h3>
+                              <h4>
                                 <FontAwesomeIcon
                                   icon={faCode}
                                   className="mr-2"
                                 />
                                 {node.language}
-                              </h6>
+                              </h4>
                             </div>
 
                             <div className="card-text">{node.description}</div>

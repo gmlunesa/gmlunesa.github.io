@@ -24,10 +24,14 @@ export default function Hero() {
                   👋
                 </span>
               </h1>
-              <h1>Hi. Hola. Bonjour.</h1>
+              <h1>
+                Hi. I'm
+                <br />
+                <span className="word">Goldy Mariz</span>.
+              </h1>
               <p>
-                Nice to meet you! I am Goldy Mariz, and I write code for a
-                living. Currently open for interesting collaborations!
+                It's nice to meet you. I write code for a living, and I am
+                currently open for collaborations!
               </p>
               <Link
                 to="content"
@@ -49,13 +53,13 @@ export default function Hero() {
                       alt=""
                     />
                   </div>
-                  <h5 className="card-title">@gmlunesa</h5>
-                  <h6>
+                  <h3 className="card-title">@gmlunesa</h3>
+                  <h4>
                     <span role="img" aria-label="pin">
                       📍
                     </span>{" "}
                     Cebu City <br />
-                  </h6>
+                  </h4>
                   <p className="card-text">
                     software engineer. imaginary astronaut.
                   </p>

@@ -8,16 +8,16 @@ section.about {
 
   h1 {
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: normal;
   }
 
   h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bolder;
     color: var(--base);
   }
 
-  h6 {
+  h4 {
     font-size: 0.85rem;
     font-style: oblique;
   }
@@ -45,7 +45,7 @@ section.about {
 
   .cursor {
     color: var(--link-primary);
-    font-weight: 400;
+    font-weight: bold;
     font-size: 2rem;
   }
 
@@ -54,6 +54,7 @@ section.about {
     border: none;
     border-radius: 0.5rem;
     background-color: var(--tertiary);
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
     .card-text {
       text-align: justify;

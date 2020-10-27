@@ -6,8 +6,6 @@ import Image from "../components/image"
 
 import Typing from "react-typing-animation"
 
-import { graphql } from "gatsby"
-
 const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" />
@@ -44,13 +42,13 @@ const AboutPage = ({ data }) => (
             <div className="card shadow-sm">
               <div className="card-body">
                 <div className="card-title">
-                  <h5>
+                  <h3>
                     Hi there!{" "}
                     <span role="img" aria-label="Happy face">
                       😊
                     </span>
-                  </h5>
-                  <h6>an introduction</h6>
+                  </h3>
+                  <h4>an introduction</h4>
                 </div>
 
                 <div className="card-text">
@@ -75,8 +73,8 @@ const AboutPage = ({ data }) => (
             <div className="card">
               <div className="card-body">
                 <div className="card-title">
-                  <h5>More about me</h5>
-                  <h6>my professional experience</h6>
+                  <h3>More about me</h3>
+                  <h4>my professional experience</h4>
                 </div>
                 <div className="card-text">
                   In my current job at{" "}
@@ -115,8 +113,8 @@ const AboutPage = ({ data }) => (
             <div className="card">
               <div className="card-body">
                 <div className="card-title">
-                  <h5>Beyond the work hours</h5>
-                  <h6>can't take my eyes off the screen</h6>
+                  <h3>Beyond the work hours</h3>
+                  <h4>can't take my eyes off the screen</h4>
                 </div>
                 <div className="card-text">
                   In my free time, I don't really do much. I like to relax
@@ -164,8 +162,8 @@ const AboutPage = ({ data }) => (
             <div className="card">
               <div className="card-body">
                 <div className="card-title">
-                  <h5>Other things I love</h5>
-                  <h6>just some recommendations</h6>
+                  <h3>Other things I love</h3>
+                  <h4>just some recommendations</h4>
                 </div>
                 <div className="card-text">
                   I don't really have a{" "}
@@ -213,10 +211,10 @@ const AboutPage = ({ data }) => (
             <div className="card">
               <div className="card-body">
                 <div className="card-title">
-                  <h5>
+                  <h3>
                     Did you ever hear the tragedy of Darth Plagueis The Wise?
-                  </h5>
-                  <h6>I thought not.</h6>
+                  </h3>
+                  <h4>I thought not.</h4>
                 </div>
                 <div className="card-text">
                   It's not a story the Jedi would tell you. It's a Sith legend.

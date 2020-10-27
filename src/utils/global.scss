@@ -38,26 +38,25 @@ body {
   }
 
   h2 {
-    font-weight: 700;
+    font-weight: bold;
     color: var(--base);
   }
 
-  h5 {
+  h3 {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--base);
   }
 
-  h6 {
+  h4 {
     font-size: 1rem;
     color: var(--contrast);
-    opacity: 0.75;
+    opacity: 0.8;
   }
 
   p {
     font-size: 1.15rem;
     color: var(--contrast);
-    font-weight: 600;
   }
 
   a {
@@ -82,6 +81,20 @@ body.light {
 
   --base: #000000;
   --contrast: #3c3c3c;
+
+  section.hero {
+    span.word {
+      font-style: normal;
+      border-radius: 1em 0 1.5em 0.5em;
+      // text-shadow: 1px 1px 1px #fff;
+      background-image: linear-gradient(
+        -100deg,
+        rgba(255, 150, 246, 0.15),
+        rgba(255, 150, 237, 0.8) 100%,
+        rgba(255, 150, 215, 0.25)
+      );
+    }
+  }
 }
 
 body.dark {
@@ -104,7 +117,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 700;
+  font-weight: bold;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
   .navbar-brand {
     color: var(--base);
@@ -113,7 +127,7 @@ nav {
     &:hover {
       color: var(--link-primary);
     }
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 2rem;
   }
 
@@ -174,4 +188,5 @@ nav.navbar {
 footer {
   background-color: var(--secondary);
   bottom: 0;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
 }

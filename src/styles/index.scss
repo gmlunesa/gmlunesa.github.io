@@ -7,6 +7,17 @@ section.hero {
       font-weight: 800;
       font-size: 4rem;
       line-height: 5rem;
+
+      // .word {
+      //   background-image: linear-gradient(
+      //     to right,
+      //     var(--link-secondary) 0%,
+      //     var(--link-secondary) 100%
+      //   );
+      //   background-repeat: no-repeat;
+      //   background-size: 100% 1rem;
+      //   background-position: 0 95%;
+      // }
     }
   }
 
@@ -16,7 +27,7 @@ section.hero {
     border-color: var(--link-secondary);
     font-size: 1.15rem;
     border-radius: 0.5rem;
-    font-weight: 600;
+    font-weight: bold;
     transition: opacity 0.5s ease-in-out;
     // margin-top: 0.5rem;
     // margin-bottom: 0.5rem;
@@ -54,6 +65,7 @@ section.hero {
       text-align: center;
       background-color: var(--complement);
       border-radius: 20px;
+      transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
       .card-body {
         margin: 25px 0;
@@ -117,7 +129,7 @@ section.hero {
   @media (min-width: 960px) {
     // background-image: url(../images/pattern.svg);
 
-    height: 100vh;
+    height: 90vh;
     min-height: 600px;
     padding-top: 0;
     padding-bottom: 0;
@@ -138,7 +150,6 @@ section.hero {
 
     .hero-introduction {
       h1 {
-        font-weight: 800;
         font-size: 3.75rem;
         line-height: 5rem;
       }
@@ -154,7 +165,7 @@ section.hero {
 section.content {
   padding: 75px 0;
   background-color: var(--secondary);
-  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+  transition: color 0.1s ease-in, background-color 0.2s ease-in;
 
   .subsection {
     h1 {
@@ -180,6 +191,7 @@ section.content {
       border: 0.5rem solid var(--tertiary);
       background-color: var(--secondary);
       margin-bottom: 0.75rem;
+      transition: background-color 0.2s ease-in;
     }
 
     .card-item {
@@ -187,6 +199,7 @@ section.content {
       background-color: var(--secondary);
       border: 1px solid transparent;
       border-radius: 0.25rem;
+      transition: background-color 0.2s ease-in;
 
       .item-icon {
         color: var(--link-primary);

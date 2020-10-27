@@ -14,7 +14,7 @@ section.blog {
 
   a {
     color: var(--basic);
-    font-weight: 700;
+    font-weight: bold;
 
     &:hover {
       text-decoration: none;
@@ -31,10 +31,9 @@ section.blog {
     border: 0.25rem solid var(--tertiary);
     background-color: var(--primary);
     margin-bottom: 0.75rem;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
     &:hover {
-      // border-color: var(--link-primary);
-      // background-color: 0.8;
       opacity: 0.85;
       border-left-color: var(--link-primary);
     }
@@ -48,7 +47,7 @@ section.blog {
 
     a {
       color: var(--basic);
-      font-weight: 700;
+      font-weight: bold;
       font-size: 1.2rem;
     }
 
@@ -111,6 +110,7 @@ section.subscribeform {
     color: var(--text-on-link);
     margin-top: 12px;
     font-weight: bold;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
     &:hover {
       opacity: 0.7;
@@ -123,6 +123,7 @@ section.subscribeform {
     text-align: center;
     background-color: var(--complement);
     border-radius: 20px;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
 
     .card-body {
       margin: 25px 0;

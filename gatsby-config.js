@@ -7,7 +7,8 @@ module.exports = {
     title: `gmlunesa`,
     description: `Official site of Goldy Mariz Lunesa`,
     author: `@gmlunesa`,
-    icon: `src/images/gmlunesa-favicon.png`,
+    image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
+    url: `https://gmlunesa.com`,
   },
   plugins: [
     {
