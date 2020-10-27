@@ -41,6 +41,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `og:image`,
+          content: `${site.siteMetadata.image}`,
+        },
+        {
           property: `og:title`,
           content: `${title} | ${site.siteMetadata.title}`,
         },

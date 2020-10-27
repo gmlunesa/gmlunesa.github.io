@@ -81,20 +81,6 @@ body.light {
 
   --base: #000000;
   --contrast: #3c3c3c;
-
-  section.hero {
-    span.word {
-      font-style: normal;
-      border-radius: 1em 0 1.5em 0.5em;
-      // text-shadow: 1px 1px 1px #fff;
-      background-image: linear-gradient(
-        -100deg,
-        rgba(255, 150, 246, 0.15),
-        rgba(255, 150, 237, 0.8) 100%,
-        rgba(255, 150, 215, 0.25)
-      );
-    }
-  }
 }
 
 body.dark {

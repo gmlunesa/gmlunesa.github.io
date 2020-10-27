@@ -27,7 +27,7 @@ export default function Hero() {
               <h1>
                 Hi. I'm
                 <br />
-                <span className="word">Goldy Mariz</span>.
+                Goldy Mariz.
               </h1>
               <p>
                 It's nice to meet you. I write code for a living, and I am
