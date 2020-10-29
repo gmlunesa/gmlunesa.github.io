@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description + " | " + site.siteMetadata.description
 
   return (
     <Helmet
@@ -66,7 +66,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,

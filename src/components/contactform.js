@@ -17,12 +17,12 @@ export default class ContactForm extends Component {
     return (
       <section className="contactform">
         <div className="container">
-          <h1>
+          <h2>
             <span className="ring mr-1" role="img" aria-label="Phone">
               📱
             </span>
             Got any ideas?
-          </h1>
+          </h2>
           {/* <p className="text-muted">Let's talk!</p> */}
 
           <div className="row">

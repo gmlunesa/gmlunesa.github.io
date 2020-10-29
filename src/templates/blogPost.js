@@ -12,7 +12,11 @@ import Img from "gatsby-image"
 const BlogPost = ({ data, pageContext }) => (
   <Layout>
     {/* {const { frontmatter, body } = data.mdx} */}
-    <SEO title="Blog" />
+    <SEO
+      title="Blog"
+      description={data.mdx.frontmatter.description}
+      title={data.mdx.frontmatter.title}
+    />
     <section className="blogpost">
       <div className="container">
         <div>
@@ -112,6 +116,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM YYYY")
         author
+        description
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 20000) {

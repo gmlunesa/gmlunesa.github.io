@@ -168,7 +168,7 @@ section.content {
   transition: color 0.1s ease-in, background-color 0.2s ease-in;
 
   .subsection {
-    h1 {
+    h2 {
       text-align: center;
       font-weight: 800;
       font-size: 2.2rem;
@@ -230,7 +230,7 @@ section.content {
 
   @media (min-width: 960px) {
     .subsection {
-      h1 {
+      h2 {
         text-align: left;
         // border-left: 5px solid var(--link-secondary);
         // padding-left: 6px;
@@ -268,7 +268,7 @@ section.content {
       }
 
       &:hover {
-        h1 {
+        h2 {
           .dot {
             background-color: var(--link-secondary);
             opacity: 1;
@@ -284,7 +284,7 @@ section.content {
 
 section.contactform {
   padding: 75px 0;
-  h1 {
+  h2 {
     text-align: center;
   }
   .img-container {
@@ -356,7 +356,7 @@ section.contactform {
   }
 
   @media (min-width: 960px) {
-    h1 {
+    h2 {
       text-align: left;
     }
   }

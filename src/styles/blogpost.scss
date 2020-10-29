@@ -28,6 +28,10 @@ section.blogpost {
     }
   }
 
+  img {
+    width: 100%;
+  }
+
   @media (min-width: 960px) {
     min-height: 100vh;
     height: 100%;

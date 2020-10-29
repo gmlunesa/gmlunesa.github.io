@@ -26,7 +26,7 @@ export default class Footer extends Component {
           <>
             <footer>
               <div className="container py-4">
-                <div className="row justify-content-md-center mt-2">
+                <div className="row justify-content-center mt-2">
                   <ul className="list-style-none">
                     <li className="list-inline-item mr-4">
                       &copy; {new Date().getFullYear()}.{" "}

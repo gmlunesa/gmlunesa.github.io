@@ -69,6 +69,7 @@ export default function Hero() {
                         href="mailto:gmlunesa@gmail.com"
                         target="_blank"
                         rel="noreferrer"
+                        alt="Email button"
                       >
                         <FontAwesomeIcon icon={faEnvelope} />
                       </a>
@@ -78,6 +79,7 @@ export default function Hero() {
                         href="https://github.com/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
+                        alt="Github button"
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>
@@ -87,6 +89,7 @@ export default function Hero() {
                         href="https://linkedin.com/in/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
+                        alt="LinkedIn button"
                       >
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
@@ -96,6 +99,7 @@ export default function Hero() {
                         href="https://twitter.com/gmlunesa"
                         target="_blank"
                         rel="noreferrer"
+                        alt="Twitter button"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
                       </a>

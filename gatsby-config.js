@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `gmlunesa`,
-    description: `Official site of Goldy Mariz Lunesa`,
+    description: `Official site of Goldy Mariz Lunesa, a software engineer who enjoys writing code and dreaming of electric sheep.`,
     author: `@gmlunesa`,
     image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
     url: `https://gmlunesa.com`,
