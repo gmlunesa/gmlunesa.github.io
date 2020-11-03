@@ -3,10 +3,15 @@ section.blogpost {
   height: 100%;
   margin-top: 1.5rem;
 
+  svg {
+    margin: auto 10px;
+  }
+
   h1 {
     text-align: center;
     font-size: 2rem;
   }
+
   .tagline {
     font-size: 0.9rem;
     opacity: 0.85;
@@ -15,6 +20,11 @@ section.blogpost {
   .content {
     margin-top: 1.5rem;
     text-align: justify;
+
+    h2 {
+      text-align: left;
+      font-size: 1.7rem;
+    }
   }
 
   .link {
@@ -30,6 +40,11 @@ section.blogpost {
 
   img {
     width: 100%;
+    border-radius: 10px;
+  }
+
+  .small-img {
+    width: 100%;
   }
 
   @media (min-width: 960px) {
@@ -38,11 +53,27 @@ section.blogpost {
     padding-top: 0;
     padding-bottom: 0;
 
+    .container {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .mx-8 {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+
     h1 {
       font-size: 2.5rem;
     }
     .tagline {
       font-size: 1rem;
+    }
+    p {
+      font-size: 17px;
+    }
+    .small-img {
+      width: 60%;
     }
   }
 }
