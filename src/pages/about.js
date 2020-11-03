@@ -10,7 +10,7 @@ const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" />
     {/* <Masthead /> */}
-    <section className="about">
+    <section className="about" id="top">
       <div className="container">
         <div className="row mt-4 justify-content-center">
           <div className="col-lg-6 col-sm-12 my-auto headline">

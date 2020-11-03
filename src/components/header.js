@@ -46,8 +46,8 @@ export default class Header extends Component {
           <>
             <Headroom>
               <nav
-                className={`navbar navbar-expand-lg ${visibilityClass}`}
                 id="mainNav"
+                className={`navbar navbar-expand-lg ${visibilityClass}`}
               >
                 <div className="container">
                   <Link className="navbar-brand" to="/">

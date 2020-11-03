@@ -9,6 +9,7 @@ module.exports = {
     author: `@gmlunesa`,
     image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
     url: `https://gmlunesa.com`,
+    siteUrl: `https://www.gmlunesa.com`,
   },
   plugins: [
     {
@@ -56,6 +57,7 @@ module.exports = {
     },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

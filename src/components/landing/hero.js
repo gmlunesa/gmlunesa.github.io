@@ -14,7 +14,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="hero" id="about">
+    <section className="hero" id="top">
       <div className="container h-100">
         <div className="row h-100 justify-content-around">
           <div className="col-lg-5 my-auto">

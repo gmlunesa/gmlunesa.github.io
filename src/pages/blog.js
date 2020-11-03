@@ -9,7 +9,7 @@ import SubscribeForm from "../components/subscribe"
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    <section className="blog">
+    <section className="blog" id="top">
       <div className="container">
         <div className="title">
           <h1>Blog | My digital garden</h1>

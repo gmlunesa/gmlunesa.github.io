@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import SubscribeForm from "../components/subscribe"
+import ShareButtons from "../components/sharebuttons"
 
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -13,13 +14,12 @@ const BlogPost = ({ data, pageContext }) => (
   <Layout>
     {/* {const { frontmatter, body } = data.mdx} */}
     <SEO
-      title="Blog"
       description={data.mdx.frontmatter.description}
       title={data.mdx.frontmatter.title}
     />
-    <section className="blogpost">
+    <section className="blogpost" id="top">
       <div className="container">
-        <div>
+        <div className="mx-8">
           <div className="row justify-content-center mb-4">
             <div className="col-12">
               <h1>{data.mdx.frontmatter.title}</h1>
@@ -43,11 +43,16 @@ const BlogPost = ({ data, pageContext }) => (
               {data.mdx.timeToRead} mins
             </div>
           </div>
+
+          <ShareButtons
+            title={data.mdx.frontmatter.title}
+            url={data.site.siteMetadata.url + "/blog/" + data.mdx.slug}
+            twitterHandle={data.site.siteMetadata.title}
+          />
           <Img
             className="featured-image"
             fluid={data.mdx.frontmatter.featuredImage.childImageSharp.fluid}
           />
-
           <div className="content">
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </div>
@@ -99,9 +104,8 @@ const BlogPost = ({ data, pageContext }) => (
               )}
             </div>
           </div>
-
-          <SubscribeForm />
         </div>
+        <SubscribeForm />
       </div>
     </section>
   </Layout>
@@ -110,6 +114,7 @@ const BlogPost = ({ data, pageContext }) => (
 export const query = graphql`
   query PostsBySlug($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
+      slug
       body
       timeToRead
       frontmatter {
@@ -124,6 +129,12 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        url
+        title
       }
     }
   }

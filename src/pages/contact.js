@@ -16,7 +16,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     {/* <Masthead /> */}
-    <section className="contact">
+    <section className="contact" id="top">
       <div className="container">
         <div className="row mt-4">
           <div className="col-md-8">

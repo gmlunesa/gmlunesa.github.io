@@ -55,7 +55,7 @@ body {
   }
 
   p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: var(--contrast);
   }
 
@@ -80,7 +80,7 @@ body.light {
   --extra: #ededed;
 
   --base: #000000;
-  --contrast: #3c3c3c;
+  --contrast: #171717;
 }
 
 body.dark {
@@ -95,7 +95,7 @@ body.dark {
 
   // Text
   --base: #ffffff;
-  --contrast: #c3c3c3;
+  --contrast: #f3f3f3;
 }
 
 nav {
@@ -175,4 +175,19 @@ footer {
   background-color: var(--secondary);
   bottom: 0;
   transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+  ul {
+    padding-inline-start: 1px;
+  }
+
+  .link {
+    background: var(--tertiary);
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: var(--base);
+    font-weight: normal;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

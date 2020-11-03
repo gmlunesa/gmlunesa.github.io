@@ -21,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sass": "^2.3.2",
     "gatsby-plugin-sharp": "^2.6.4",
+    "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-source-filesystem": "^2.3.4",
     "gatsby-transformer-json": "^2.4.5",
     "gatsby-transformer-sharp": "^2.5.2",
@@ -33,6 +34,7 @@
     "react-helmet": "^6.0.0",
     "react-id-swiper": "^3.0.0",
     "react-scroll": "^1.8.1",
+    "react-share": "^4.3.1",
     "react-typing-animation": "^1.6.2",
     "typeface-montserrat": "0.0.75"
   },
