@@ -77,15 +77,9 @@ const AboutPage = ({ data }) => (
                   <h4>my professional experience</h4>
                 </div>
                 <div className="card-text">
-                  In my current job at{" "}
-                  <a href="https://ncr.com" target="_blank" rel="noreferrer">
-                    NCR Corporation
-                  </a>
-                  , I have two main roles as a software engineer: solve bugs and
-                  create new features. Which do I like better? Well, I find that
-                  hard to decide. The current code base and technologies
-                  currently deployed in NCR is very complex and multi-layered.
-                  Hence, both defect solution and functionality implementations
+                  In my experience as a software engineer, I have two main
+                  roles: solve bugs and create new features. Which do I like
+                  better? Both defect solution and functionality implementations
                   are challenging and fullfilling to do.
                   <br />
                   <br />
@@ -179,7 +173,17 @@ const AboutPage = ({ data }) => (
                   For movies, I love going back to Middle Earth and root for the
                   best hobbit in the world, Samwise Gamgee. One could never go
                   wrong with Lord of the Rings trilogy (extended verions
-                  please).
+                  please). I truly adore the lore of the Middle Earth, and the
+                  efforts that JRR Tolkien dedicated in the world building.
+                  Although the movies are great adaptations, I still like going
+                  back and reading The Lord of the Rings novels.
+                  <br />
+                  <br />
+                  I am a sucker for the fantasy genre. My favorite literary work
+                  is A Song of Ice and Fire by George RR Martin. I love how the
+                  characters are written to reflect humanity in real life, with
+                  grey morality in characters and complexities in politics. For
+                  manga, I highly recommend Shingeki No Kyojin.
                   <br />
                   <br />
                   For music, the only album I could listen to on repeat forever
@@ -190,12 +194,15 @@ const AboutPage = ({ data }) => (
                   existential thoughts.
                   <br />
                   <br />
-                  Speaking of existential thoughts, please watch Neon Genesis
-                  Evangelion. It seems like a mecha early on, but I promise, it
-                  is a beautiful melancholic slow burn. Like Breaking Bad! Such
-                  a well-crafted show worth the patience and occasional fly
+                  Speaking of existential thoughts, I believe Neon Genesis
+                  Evangelion delivers that with its exploration in human psyche
+                  and emotions. It seems like a mecha early on, but I promise,
+                  it is a beautiful melancholic slow burn. Like Breaking Bad!
+                  Such a well-crafted show worth the patience and occasional fly
                   swatting attempts. Better Call Saul, its prequel spin-off
                   series, is also exceptional.
+                  <br />
+                  <br />
                 </div>
               </div>
             </div>

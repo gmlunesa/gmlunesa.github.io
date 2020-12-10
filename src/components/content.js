@@ -34,7 +34,7 @@ export default class Content extends Component {
             <section className="content" id="content">
               <div className="container">
                 {/* Job subsection */}
-                <div className="subsection">
+                {/* <div className="subsection">
                   <h2>
                     <span className="dot"></span>What do I{" "}
                     <span className="word">do</span>?
@@ -67,7 +67,7 @@ export default class Content extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="subsection">
                   {" "}
                   <h2 className="mt-5">

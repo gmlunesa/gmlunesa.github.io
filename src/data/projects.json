@@ -1,5 +1,11 @@
 [
   {
+    "project": "detectfacemask",
+    "language": "Python, TensorFlow",
+    "description": "Detects faces and face mask usage in images and live video feed.",
+    "link": "https://github.com/gmlunesa/detectfacemask"
+  },
+  {
     "project": "fareye",
     "language": "NodeJS, TensorFlow",
     "description": "Reading adjusted for the near-sighted.",

@@ -16,16 +16,14 @@ export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="container h-100">
-        <div className="row h-100 justify-content-around">
+        <div className="row h-100 justify-content-around mb-5">
           <div className="col-lg-5 my-auto">
             <div className="hero-introduction">
               <h1>
-                <span className="wave" role="img" aria-label="Hand wave">
+                <span className="wave mr-2" role="img" aria-label="Hand wave">
                   👋
                 </span>
-              </h1>
-              <h1>
-                Hi. I'm
+                Hi, I'm
                 <br />
                 Goldy Mariz.
               </h1>
@@ -35,16 +33,37 @@ export default function Hero() {
               </p>
               <Link
                 to="content"
-                className="hero-button btn btn-primary shadow-sm"
+                className="hero-button btn shadow-sm"
                 smooth={true}
               >
                 Get to know me
               </Link>
+              {/* <div className="row justify-content-around mt-3">
+                <div className="col-lg-6 my-auto">
+                  <Link
+                    to="content"
+                    className="hero-button btn shadow-sm"
+                    smooth={true}
+                  >
+                    Get to know me
+                  </Link>
+                </div>
+                <div className="col-lg-6 my-auto">
+                  <a
+                    href="https://drive.google.com/file/d/19cmJzYvDxoLpc0IoV4ZkHYZlS7HMyBlU/view?usp=sharing"
+                    className="hero-button--resume btn shadow-sm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Get my resume&nbsp;
+                  </a>
+                </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-4 my-auto">
             <div className="hero-bio">
-              <div className="card shadow-sm mb-5">
+              <div className="card shadow-sm">
                 <div className="card-body">
                   <div className="icon">
                     <Image

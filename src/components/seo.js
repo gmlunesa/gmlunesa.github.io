@@ -43,6 +43,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `image`,
+          property: `image`,
           content: `${site.siteMetadata.image}`,
         },
         {
@@ -59,10 +60,12 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
+          property: `og:image`,
           content: `${site.siteMetadata.image}`,
         },
         {
           name: `og:url`,
+          property: `og:url`,
           content: `${site.siteMetadata.url}`,
         },
         {

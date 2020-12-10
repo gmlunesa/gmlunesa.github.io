@@ -28,22 +28,42 @@ const ContactPage = () => (
             </p>
             <ul className="list-group list-group-horizontal">
               <li className="list-group-item">
-                <a href="mailto:gmlunesa@gmail.com">
+                <a
+                  href="mailto:gmlunesa@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="Mail"
+                >
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="https://github.com/gmlunesa">
+                <a
+                  href="https://github.com/gmlunesa"
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="Github"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="https://linkedin.com/in/gmlunesa">
+                <a
+                  href="https://linkedin.com/in/gmlunesa"
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="LinkedIn"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="https://twitter.com/gmlunesa">
+                <a
+                  href="https://twitter.com/gmlunesa"
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="Twitter"
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
