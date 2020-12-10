@@ -79,8 +79,8 @@ const AboutPage = ({ data }) => (
                 <div className="card-text">
                   In my experience as a software engineer, I have two main
                   roles: solve bugs and create new features. Which do I like
-                  better? Both defect solution and functionality implementations
-                  are challenging and fullfilling to do.
+                  better? Well, both! Defect solution and functionality
+                  implementations are challenging and fullfilling to do.
                   <br />
                   <br />
                   Going through Agile workflows in my past and current
