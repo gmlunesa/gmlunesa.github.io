@@ -1,0 +1,54 @@
+.w-fit-content{
+  width: fit-content;
+}
+.lg{
+  &\:min-h-vh-100{
+    @include desktops{
+      min-height: 100vh;
+    }
+  }
+}
+.min-h-vh-100{
+  min-height: 100vh;
+ 
+}
+.h-xs-100{
+  @include mobile{
+    height: 100%;
+  }
+}
+.h-sm-100{
+  @include mobile-lg{
+    height: 100%;
+  }
+}
+.h-md-100{
+  @include mobile-lg{
+    height: 100%!important; 
+  }
+}
+.h-lg-100{
+  @include desktops{
+    height: 100%;
+  }
+}
+.h-px-50{
+  min-height: 50px;
+}
+.gr-min-width-219{
+  min-width: 219px;
+}
+
+.gr-textarea-height{
+  min-height: 175px;
+}
+.fluid-map-height{
+  min-height: 300px;
+  width: 100%;
+  @include mobile-lg{
+    min-height: 400px;
+  }
+  @include tablet{
+    min-height: 541px;
+  }
+}

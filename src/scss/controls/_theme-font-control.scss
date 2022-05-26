@@ -1,0 +1,43 @@
+//-------------------------
+//--- Theme Typography
+//-------------------------
+$enable-responsive-font-sizes: true;
+$font-family-base:            'Work Sans', sans-serif;
+
+$headings-font-weight:        700;
+$headings-color:            rgba(22,28,45,0.4);
+$text-color:                rgba(22,28,45,0.7);
+
+//- Display Sizes
+
+$display1-size:               6rem; 
+$display2-size:               5.5rem;
+$display3-size:               5rem;
+$display4-size:               3.75rem;
+
+
+//- Font Sizes 
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$h1-font-size:                $font-size-base * 3; //About 48px
+$h2-font-size:                $font-size-base * 2.25; //About 36px
+$h3-font-size:                $font-size-base * 2;  //About 32px
+$h4-font-size:                $font-size-base * 1.5; //About 24px
+$h5-font-size:                $font-size-base * 1.3125; //About 21px
+$h6-font-size:                $font-size-base * 1.1; //About 17px
+$h7-font-size:                $font-size-base;
+$h8-font-size:                $font-size-base * 0.8125; //About 13px
+
+$p2-font-size:                $font-size-base * 1.1875; //19px
+$p3-font-size:                $font-size-base * 1.0625; //17px
+$p4-font-size:                $font-size-base;//16px
+$p5-font-size:                $font-size-base * 0.9375;//15px
+
+$text-base:                   $p2-font-size;
+
+
+$line-height-base:            1.5;
+$line-height-lg:              1.5;
+$line-height-sm:              1.5;

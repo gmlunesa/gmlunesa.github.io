@@ -1,0 +1,29 @@
+.projects-slider{
+  .slick-list{
+    margin: 0 -15px;
+    padding-bottom: 45px;
+  }
+  .single-slide{
+    margin: 0 15px;
+  }
+  &-arrows{
+    display: flex;
+    border-radius: 10px;
+    background-color: #f4f7fa;
+    max-width: fit-content;
+    .slick-arrow{
+      font-size: 12px;
+      border: 0;;
+      background: transparent;
+      position: relative;
+      font-size: 22px;
+      height: 44px;
+      width: 34px;
+      display: flex;
+      font-weight: 900;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+    }
+  }
+}

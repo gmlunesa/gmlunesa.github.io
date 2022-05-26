@@ -1,0 +1,19 @@
+.abs-img {
+  position: absolute;
+  right: -15px;
+  top: -40px;
+  z-index: -1;
+}
+.wave-shape {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 120%;
+  @include large-desktops {
+    width: 106%;
+    // bottom: -35px;
+    img {
+      width: 106%;
+    }
+  }
+}

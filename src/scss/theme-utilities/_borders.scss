@@ -1,0 +1,27 @@
+.gr-md-rounded{
+  @include tablet{
+    border-radius: $border-radius;
+  }
+}
+
+
+.border-lg-left{
+  @include desktops{
+    border-left: 1px solid var(--border-color);
+  }
+}
+
+.border-sm-divider {
+  width: 161px;
+  height: 1px;
+  border: 3px solid $blackish-blue;
+  opacity: 0.1;
+  margin: 0 auto;
+  &.dark {
+    border: 3px solid #ffffff;
+  }
+}
+
+.form-control {
+  border-color: $gray-210;
+}

@@ -1,0 +1,67 @@
+$grays: ();
+$grays: map-merge(
+  (
+    "110": $gray-110,
+    "120": $gray-120,
+    "210": $gray-210,
+    "310": $gray-310,
+    "610": $gray-610,
+    "710": $gray-710,
+    "910": $gray-910,
+    "920": $gray-920,
+    "930": $gray-930,
+    "940": $gray-940,
+  ),
+  $grays
+);
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+     "red": $red,
+    "green": $green,
+    "green-shamrock": $green-shamrock,
+    "blue": $blue,
+    "sky-blue": $sky-blue,
+    "yellow": $yellow,
+    "yellow-orange": $yellow-orange,
+    "blackish-blue": $blackish-blue,
+    "black": $black,
+    "mirage": $mirage,
+    "mirage-2": $mirage-2,
+    "white": $white,
+    "smoke": $smoke,
+    "storm": $storm,
+    "ghost": $ghost,
+    "gray-1": $gray-110,
+    "gray-2": $gray-120,
+    "gray-3": $gray-210,
+    "gray-310": $gray-310,
+    "gray-opacity": $gray-opacity,
+    "blackish-blue-opacity": $blackish-blue-opacity,
+    "narvik": #edf9f2,
+  ),
+  $theme-colors
+);
+
+//-------------------------
+//-- Opacity Values
+//-------------------------
+$gr-opacity: ();
+$gr-opacity: map-merge(
+  (
+    visible: 1,
+    1: 0.1,
+    2: 0.2,
+    3: 0.3,
+    4: 0.4,
+    5: 0.5,
+    6: 0.6,
+    7: 0.7,
+    8: 0.8,
+    9: 0.9,
+  ),
+  $gr-opacity
+);

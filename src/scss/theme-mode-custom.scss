@@ -1,0 +1,40 @@
+@import "controls/theme-variables";
+@import "controls/theme-media-query";
+@import "controls/theme-mixins";
+body[data-theme='light']{
+  .text-primary--light-only{
+    color: $primary;
+  }
+  
+
+}
+body[data-theme='dark']{
+
+  .border-gray-3{
+    border-color: var(--border-color)!important;
+  }
+  .bg-gradient-2{
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, $blackish-blue 100%);
+  }
+
+  .border-blackish-blue{
+    border-color: #fff!important;
+  }
+  .gr-bg-blackish-blue-opacity-1{
+    background-color: rgba(255, 255, 255,.8)!important;
+  }
+
+
+  .btn-toggle{
+    background-color:#efefef ;
+    span{
+      background: $primary;
+    }
+    &.active {
+      span{
+       background: #ffff;
+      }
+    }
+  }
+}
+

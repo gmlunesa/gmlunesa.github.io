@@ -1,0 +1,157 @@
+.gr-check-input{
+  padding-top: 5px;
+  margin-bottom: 20px;
+  input:checked{
+    &~.checkbox{
+      background: $primary;
+      &::after{
+        opacity: 1;
+        color: #fff;
+      }
+    }
+  }
+  .checkbox{
+    position: relative;
+    line-height: 1;
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+    background-color: #E7E9ED;
+    &:after{
+      content: "\eaba";
+      font-family: 'Work Sans', sans-serif;
+      font-size: 15px;
+      font-weight: normal;
+      color: $black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.gr-radio-input{
+  input{
+    &:checked{
+      ~ label{
+        .round-indicator{
+          border: 1px solid $primary;
+          background: #fff;
+          &:after{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.round-indicator{
+  position: relative;
+  display: inline-block;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  border-radius: 500px;
+  &:after{
+    content: "";
+    background-color: $primary;
+    min-width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    max-height: 12px;
+    border-radius: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+.location-filter-form{
+  border-radius: 10px;
+  .single-input{
+    border-bottom:1px solid $gray-210;
+    @include mobile-lg{
+      border-right:1px solid $gray-210;
+    }
+    @include desktops{
+      border-bottom:0;
+    }
+    &:last-child{
+      border-right: 0;
+    }
+  }
+  .location-select{
+    position: relative;
+    padding-left: 50px;
+    border: 0;
+    font-size: 15px;
+    &:before{
+      content: '\f3c5';
+      font-weight: 700;
+      left: 0;
+      top: 0;
+      height: 100%;
+      position: absolute;
+      width: 45px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .list{
+      margin-top: 0;
+    }
+  }
+.form-control{
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.date-picker{
+  display: flex;
+  align-items: center;
+  >div{
+    height: 100%;
+    width: 100%;
+  }
+}
+    .date-picker-input{
+      padding-left: 45px;
+      margin-top: 3px;
+      color: $blackish-blue;
+      font-size: 15px;
+      &::placeholder{
+        color: $blackish-blue;
+      }
+    }
+    .date-picker-icon{
+      font-size: 18px;
+      width: 45px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $blackish-blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+    .search-btn{
+      min-width: 199px;
+      
+    }
+}

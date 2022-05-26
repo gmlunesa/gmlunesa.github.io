@@ -1,0 +1,79 @@
+.gr-timeline-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @include brk-point(400px) {
+    margin: 0 -15px;
+  }
+  @include desktops {
+    margin: 0 -35px;
+  }
+  .single-timeline-feature {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    @include brk-point(400px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-width: calc(80% - 15px);
+      max-width: calc(80% - 15px);
+    }
+    @include brk-point(500px) {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-width: calc(50% - 15px);
+      max-width: calc(50% - 15px);
+    }
+    @include tablet {
+      margin-bottom: 0;
+      min-width: calc(33.333% - 15px);
+      max-width: calc(33.333% - 15px);
+    }
+    @include desktops {
+      padding-left: 35px;
+      padding-right: 35px;
+      min-width: calc(33.333% - 35px);
+      max-width: calc(33.333% - 35px);
+    }
+    // &:first-child{
+
+    // }
+    &:nth-child(2) {
+      &:before {
+        display: none;
+        @include tablet {
+          display: block;
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+      &:before {
+        content: "";
+      }
+    }
+    &:before {
+      position: absolute;
+      content: url(../assets/image/svg/l6-how-timeline.svg);
+      top: 20px;
+      left: 50%;
+      z-index: -1;
+      display: none;
+      @include brk-point(500px) {
+        width: 95%;
+        overflow: hidden;
+        display: block;
+      }
+      @include tablet {
+        width: 95%;
+        overflow: hidden;
+      }
+      @include large-desktops {
+        width: 100%;
+        overflow: unset;
+      }
+    }
+  }
+}
