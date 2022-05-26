@@ -1,0 +1,203 @@
+a{
+  transition: .4s;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.gr-hover-shadow-1 {
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 34px 33px -23px rgba(22, 28, 45, 0.13);
+
+  }
+}
+.gr-hover-shadow-2 {
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 31px 34px -20px rgba(0, 0, 0, 0.09);
+
+  }
+}
+.gr-hover-shadow-3 {
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 42px 44px -10px rgba(1, 23, 48, 0.12);
+
+  }
+}
+.gr-hover-shadow-4 {
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 32px 54px rgba(22, 28, 45, 0.16);
+  }
+}
+.gr-hover-shadow-5 {
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 30px 44px rgba(13, 21, 46, 0.09)
+  }
+}
+.gr-hover-shadow-6 {
+  transition: .3s;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    z-index: 3;
+    box-shadow: 0 62px 64px -10px rgba(1, 23, 48, 0.12);
+  }
+}
+
+.gr-hover-rotate-img {
+  img {
+    will-change: transform;
+    transition: 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: rotate(0deg) scale(1);
+    overflow: hidden;
+  }
+  &:hover {
+    @include tablet{
+      img {
+        transform: rotate(-3deg) scale(1.2);
+        opacity: .6;
+      }
+    }
+  }
+}
+
+.gr-hover-opacity-full {
+  transition: .4s;
+  &:hover {
+    @include tablet{
+      opacity: 1;
+    }
+  }
+}
+
+.gr-hover-y {
+  transition: .4s;
+  &:hover {
+    @include tablet{
+      transform: translateY(-8px);
+    }
+  }
+}
+.gr-abs-hover-y {
+  transition: .4s;
+  &:hover {
+    @include tablet{
+      transform: translate(-50%, -65%);
+    }
+  }
+}
+
+.gr-hover-text-green {
+  transition: .4s;
+  &:hover {
+    color: $green!important;
+    i {
+      color: $green!important;
+
+    }
+  }
+}
+
+.gr-hover-text-red {
+  transition: .4s;
+  &:hover {
+    color: $red!important;
+    i {
+      color: $red!important;
+    }
+  }
+}
+
+.hover-underline {
+  transition: .4s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.bg-white, a.bg-white {
+  &:hover {
+    background-color: #fff!important;
+  }
+}
+.text-white, a.text-white {
+  &:hover {
+    color: #fff!important;
+  }
+}
+
+.gr-hover-text-green, a.gr-hover-text-green {
+  transition: .4s;
+  &:hover {
+    color: $green!important;
+    i {
+      color: $green!important;
+    }
+  }
+}
+
+.gr-hover-text-blue, a.gr-hover-text-blue {
+  transition: .4s;
+  &:hover {
+    color: $blue!important;
+    i {
+      color: $blue!important;
+    }
+  }
+}
+
+
+
+.gr-product-hover-1{
+  .hover-animation-item{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    transition: .6s;
+  }
+  &:hover{
+    .hover-animation-item{
+      bottom: 35px;
+      opacity: 1;
+    }
+  }
+}
+
+.gr-hover-scale-img {
+  img {
+    transition: .3s;
+    transform: scale(1);
+    box-shadow: 0 32px 54px rgba(22, 28, 45, 0);
+    will-change: transform;
+  }
+  &:hover {
+    img {
+      transform: scale(0.9);
+      box-shadow: 0 32px 54px rgba(22, 28, 45, 0.16);
+    }
+  }
+}
+
+.content-img-animate-2 {
+  animation-name: animate-round;
+  animation-duration: 18s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.content-img-animate-1 {
+  animation-name: animate-round;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

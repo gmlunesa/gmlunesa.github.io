@@ -1,0 +1,59 @@
+@import "theme-mode-control/theme-mode-activation";
+@import "controls/theme-functions";
+@import "controls/theme-variables";
+@import "controls/theme-media-query";
+@import "controls/theme-mixins";
+//Bootstrap Required
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.container.container-1600{
+  max-width:1600px
+}
+
+.element-preview-tab{
+  .nav-link {
+    padding: 7px 16px;
+    margin-left:5px;
+    transition: .4s;
+    font-size: $h8-font-size;//Approx 13 px
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blackish-blue;
+    border-radius: 16px;
+    &.active {
+      background: rgba($blue, 0.2);
+      color: $blue;
+    }
+  
+  }
+}
+.code-single-block{
+  max-height: 500px;
+  overflow-y: auto;
+  div.code-toolbar > .toolbar{
+    top: 15px;
+    right: 15px;
+    button{
+      color: #fff;
+      font-size: 13px;
+      padding: 0 13px;
+      background: var(--red);
+      min-width: 67px;
+      height: 34px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 5px;
+    }
+  } 
+}
+
+.element-block{
+  .site-header--absolute{
+    z-index: 998;
+  }
+  .nav-item.dropdown{
+    z-index: 98;
+  }
+}

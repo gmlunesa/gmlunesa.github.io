@@ -1,0 +1,47 @@
+.hero-card-1-animation {
+  animation: float 3s ease-in-out infinite;
+}
+.hero-card-2-animation {
+  animation: float 3s ease-in-out 1s infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.09);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+    transform: translatey(-15px);
+  }
+  100% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.09);
+    transform: translatey(0px);
+  }
+}
+@keyframes floatX {
+  0% {
+    transform: translatex(-15px);
+  }
+  50% {
+    transform: translatex(0px);
+  }
+  100% {
+    transform: translatex(-15px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.09);
+    transform: rotate3d(16, 2, 1, -1deg);
+  }
+  50% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+    transform: rotate3d(16, 2, 1, -25deg);
+  }
+  100% {
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.09);
+    transform: rotate3d(16, 2, 1, -1deg);
+  }
+}

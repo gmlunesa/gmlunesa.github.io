@@ -1,0 +1,99 @@
+//-------------------------
+//-- Spacings Variables
+//-------------------------
+
+// $spacer: 1rem;
+// $gr-spacers: ();
+// // stylelint-disable-next-line scss/dollar-variable-default
+// $gr-spacers: map-merge(
+//   (
+//     0: 0,
+//     1:  ($spacer * .375),         // 6   (Now 2)
+
+//     2:  ($spacer * .5),           // 8   (Now 3)
+//     3:  ($spacer * .75),         // 12   (Now 5)
+
+//     4:   $spacer,                // 16   (Now 6)
+
+//     5:  ($spacer * 1.25),        // 20   (Now 7)
+//     6:  ($spacer * 1.5625),      // 25   (Now 8)
+
+//     7:  ($spacer * 1.875),       // 30   (Now 9)
+
+//     8:  ($spacer * 2.5),         // 40   (Now 11)
+
+//     9:  ($spacer * 2.8125),      // 45   (Now 12)
+
+//     10: ($spacer * 3.125),       // 50   (Now 13)
+
+//     11: ($spacer * 3.75),        // 60   (Now 15)
+
+//     12: ($spacer * 4.375),       // 70   (Now 17)
+
+//     13: ($spacer * 5),           // 80   (Now 19)
+
+//     14: ($spacer * 5.625),       // 90   (Now 21)
+//     15: ($spacer * 6.25),       // 100   (Now 23)
+
+//     16: ($spacer * 7.5),        // 120   (Now 25)
+//     17: ($spacer * 9.375),      // 150   (Now 29)
+//     18: ($spacer * 12.5),       // 200   (Now 33)
+//     19: ($spacer * 15)          // 240   (Now near 35)
+//   ),
+//   $gr-spacers
+// );
+
+
+
+$spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),         // 4px
+    2: ($spacer * .375),        // 6px  (now b 3)
+    3: ($spacer * .5),          // 8px  (now b 6)
+    4: ($spacer * .625),        // 10px (now b around 8)
+    5: ($spacer * .75),         // 12px (now b around 13)
+
+    6: $spacer,                 // 16px
+    7: ($spacer * 1.25),        // 20px
+    8: ($spacer * 1.5625),      // 25px
+    9: ($spacer * 1.875),       // 30px
+    10: ($spacer * 2.1875),     // 35px
+
+    11: ($spacer * 2.5),        // 40px
+    12: ($spacer * 2.8125),     // 45px
+    13: ($spacer * 3.125),      // 50px
+    14: ($spacer * 3.4375),     // 55px
+    15: ($spacer * 3.75),       // 60px
+
+    16: ($spacer * 4.0625),     // 65px
+    17: ($spacer * 4.375),      // 70px
+    18: ($spacer * 4.6875),     // 75px
+    19: ($spacer * 5),          // 80px
+    20: ($spacer * 5.3125),     // 85px
+
+    21: ($spacer * 5.625),      // 90px
+    22: ($spacer * 5.9375),     // 95px
+    23: ($spacer * 6.25),       // 100px
+    24: ($spacer * 6.875),      // 110px
+    25: ($spacer * 7.5),        // 120px
+
+    26: ($spacer * 8.125),      // 130px
+    27: ($spacer * 8.4375),     // 135px
+    28: ($spacer * 9.0625),     // 145px
+    29: ($spacer * 9.375),      // 150px
+    30: ($spacer * 9.6875),     // 155px
+
+    31: ($spacer * 10.625),     // 170px
+    32: ($spacer * 11.25),      // 180px
+    33: ($spacer * 12.5),       // 200px
+    34: ($spacer * 14.0625),    // 225px
+    35: ($spacer * 15.625),     // 250px
+
+  ),
+  $spacers
+);
+$enable-negative-margins: true;

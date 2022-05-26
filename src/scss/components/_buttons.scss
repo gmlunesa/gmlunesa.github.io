@@ -1,0 +1,102 @@
+.btn {
+  // color: $gray-940;
+  min-width: 175px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // transition: .4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  // &:hover {
+  //   transform: translateY(-8px);
+  // }
+  &-hover-translate-none{
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+  &.with-icon {
+    i {
+      margin-left: 25px;
+    }
+    &-left{
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+  &-primary{
+    color: #fff;
+    &.with-icon {
+      i {
+        margin-left: 25px;
+      }
+    }
+    &:hover{
+      background: $primary;
+    }
+  }
+  &-white{
+    border: 1px solid #d5d7dd;
+    &:hover {
+      color: $primary;
+      background: #fff;
+    }
+  }
+  &-link {
+    &.with-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        margin-left: 16px;
+        transition: .4s;
+      }
+      &:hover {
+        i {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
+.card-btn-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    margin-left: auto;
+    transition: .4s;
+  }
+  &:hover {
+    i {
+      margin-right: -5px;
+    }
+  }
+}
+
+.btn-toggle{
+  width: 72px;
+  height: 33px;
+  border-radius: 17px;
+  background-color: rgba($blackish-blue, 0.15);
+  position: relative;
+  margin: 0 15px;
+  span{
+    width: 21px;
+    height: 21px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    margin-left: 6px;
+    top: 0;
+    margin-top: 6px;
+    transition: .4s;;
+    border-radius: 500px;
+    pointer-events:none;
+  }
+  &.active{
+    background: $primary;
+    span{
+      left: calc(100% - 33px);
+    }
+  }
+}

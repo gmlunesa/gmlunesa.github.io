@@ -1,0 +1,25 @@
+.gr-nav-tabs{
+  @include mobile-lg{
+    border-bottom: 1px solid var(--border-color);
+  }
+    .nav-link{
+      padding-left:0px;
+      padding-right: 0px;
+      margin-right: 50px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-top: 20px;
+      margin-bottom:-1px ;
+      color: var(--texts-color);
+      @include mobile-lg{
+        margin-right: 100px;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      &.active{
+        border-color: $primary;
+        color: $primary;
+      }
+    }
+}
