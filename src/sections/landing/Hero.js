@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <div className="hero-landing pt-29 pt-lg-32 pb-5 position-relative z-index-1 bg-red">
+      <div className="hero-section hero-area-03 pt-29 pt-lg-32 pb-5 position-relative bg-red">
         <Container>
           <Row className="justify-content-center">
             <Col md="9" lg="7" xl="6">
@@ -23,11 +23,7 @@ const Hero = () => {
                   considerable experience in building robust and complex
                   applications
                 </p>
-                <div
-                  className="hero-btn mt-11 "
-                  data-aos="fade-right"
-                  data-aos-duration="1200"
-                >
+                <div className="hero-btn mt-11 ">
                   <a
                     href="mailto:gmlunesa@gmail.com"
                     className="btn btn-sky-blue rounded-8 gr-text-7 text-red gr-hover-y"
@@ -39,12 +35,7 @@ const Hero = () => {
                 </div>
               </div>
             </Col>
-            <div
-              className="col-md-9 col-lg-5 col-xl-6"
-              data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-delay="500"
-            >
+            <div className="col-md-9 col-lg-5 col-xl-6">
               <div className="hero-img position-relative">
                 <img
                   src={imgHero}
@@ -61,7 +52,7 @@ const Hero = () => {
             alt="Wave design"
             className="w-100 light-shape default-shape"
           />
-          <img src={imgHeroWaveShadow} alt="" className="w-100 dark-shape" />
+          {/* <img src={imgHeroWaveShadow} alt="" className="w-100 dark-shape" /> */}
         </div>
       </div>
     </>

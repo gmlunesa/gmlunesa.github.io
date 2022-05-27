@@ -14,9 +14,6 @@ const IndexPage = () => {
           align: "right",
           isFluid: true,
         }}
-        footerConfig={{
-          style: "style3", //style1, style2
-        }}
       >
         <Seo title="Home" />
         <Hero />

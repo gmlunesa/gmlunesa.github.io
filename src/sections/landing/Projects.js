@@ -56,7 +56,7 @@ const Projects = () => {
   return (
     <>
       {/* <!-- Projects section --> */}
-      <div className="projects feature-section bg-default-4 pt-13 pt-lg-24 pb-2 pb-lg-22">
+      <div className="projects-section bg-default-4 pt-13 pt-lg-24 pb-2 pb-lg-22">
         <Container>
           <Row className="justify-content-lg-between align-items-center pb-9 pb-sm-0">
             <Col sm="8" md="6" lg="6" xl="5">

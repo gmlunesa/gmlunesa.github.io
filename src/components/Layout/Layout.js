@@ -29,23 +29,6 @@ import { get, merge } from "lodash"
 // the full theme object
 import { theme as baseTheme } from "../../utils"
 
-const Loader = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  z-index: 9999999999;
-  opacity: 1;
-  visibility: visible;
-  transition: all 1s ease-out 0.5s;
-  &.inActive {
-    opacity: 0;
-    visibility: hidden;
-  }
-`
-
 // options for different color modes
 const modes = { light: "light", dark: "dark" }
 
@@ -60,11 +43,8 @@ const Layout = ({ children, pageContext }) => {
   // eslint-disable-next-line
   const gContext = useContext(GlobalContext)
 
-  const [visibleLoader, setVisibleLoader] = useState(true)
-
   useLayoutEffect(() => {
     AOS.init({ once: true })
-    setVisibleLoader(false)
   }, [])
 
   // Navbar style based on scroll
@@ -94,9 +74,8 @@ const Layout = ({ children, pageContext }) => {
       <ThemeProvider theme={getTheme(modes.dark)}>
         <div data-theme-mode-panel-active data-theme="light">
           <GlobalStyle />
-          <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
           <div className="site-wrapper overflow-hidden" ref={eleRef}>
-            <Header isDark={gContext.headerDark} />
+            <Header />
             {children}
 
             <Footer />
