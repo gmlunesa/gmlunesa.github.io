@@ -1,0 +1,45 @@
+import * as React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import BlogLink from "../components/BlogLink";
+import BlogList from "../sections/Blog/BlogList";
+
+const Blog = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .map((edge) => <BlogLink key={edge.node.id} post={edge.node} />);
+  return (
+    <section>
+      <Layout>
+        <Seo title="Blog" />
+        <BlogList edges={edges} />
+      </Layout>
+    </section>
+  );
+};
+export default Blog;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 200)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            tag
+            description
+          }
+        }
+      }
+    }
+  }
+`;

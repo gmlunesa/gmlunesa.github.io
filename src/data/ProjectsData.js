@@ -17,7 +17,7 @@ const ProjectsData = [
     type: "Fullstack",
     name: "Methical",
     description: "Application that generates a non-existent profile",
-    tech: "TensorFlow.js",
+    tech: "MERN",
     link: "https://methical.netlify.app",
   },
 ];
