@@ -1,0 +1,28 @@
+{
+  "name": "gmlunesa.github.io",
+  "version": "2.0.0",
+  "description": "A portfolio website of Goldy Mariz Lunesa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmlunesa/gmlunesa.github.io.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gmlunesa"
+  ],
+  "author": "Goldy Mariz Lunesa <gmlunesa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmlunesa/gmlunesa.github.io/issues"
+  },
+  "homepage": "https://github.com/gmlunesa/gmlunesa.github.io#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+	"gatsby": "^4.14.1",
+  }
+}
