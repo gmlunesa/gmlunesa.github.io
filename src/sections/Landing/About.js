@@ -37,7 +37,7 @@ const experiences = [
 const About = () => {
   return (
     <section className="dark:bg-gray-700 dark:text-gray-100 bg-gray-100 text-gray-800">
-      <div className="py-12">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             {/* <h2 className="text-base text-rose-600 font-semibold tracking-wide uppercase">

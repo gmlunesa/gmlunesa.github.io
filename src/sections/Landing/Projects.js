@@ -4,7 +4,7 @@ import ProjectsData from "../../data/ProjectsData";
 
 const Projects = () => {
   return (
-    <section className="py-20 dark:bg-gray-700 dark:text-gray-100 bg-gray-100 text-gray-800">
+    <section className="py-16 dark:bg-gray-700 dark:text-gray-100 bg-gray-100 text-gray-800">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <h2 className="text-4xl font-bold lg:text-4xl">Featured Projects</h2>
