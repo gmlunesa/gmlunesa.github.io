@@ -1,241 +1,138 @@
-import React, { useState, useContext } from "react"
-import styled from "styled-components"
-import { Container } from "react-bootstrap"
-import { useScrollPosition } from "@n8tb1t/use-scroll-position"
-import { Link } from "gatsby"
-import { GoPlusSmall, GoKebabVertical } from "react-icons/go"
+import * as React from "react";
+import { Fragment } from "react";
+import { Link } from "gatsby";
 
-import GlobalContext from "../../context/GlobalContext"
-import Offcanvas from "../Offcanvas"
-import NestedMenu from "../NestedMenu"
-import { device } from "../../utils"
-import Logo from "../Logo"
-import { menuItems } from "../../data/menuItems"
+import { StaticImage } from "gatsby-plugin-image";
 
-const SiteHeader = styled.header`
-  padding: 10px 0 10px 0;
-  position: absolute !important;
-  top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 999;
-  @media ${device.lg} {
-    position: fixed !important;
-    transition: 0.6s;
-    &.scrolling {
-      transform: translateY(-100%);
-      transition: 0.6s;
-    }
-    &.reveal-header {
-      transform: translateY(0%);
-      box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
-      z-index: 9999;
-      background: ${({ theme }) => theme.colors.heading};
-    }
-  }
-`
-
-const ToggleButton = styled.button`
-  color: ${({ theme }) => theme.colors.lightShade}!important;
-  border-color: ${({ theme }) => theme.colors.lightShade}!important;
-`
+import { Popover, Transition } from "@headlessui/react";
+import {
+  MenuIcon,
+  XIcon,
+  NewspaperIcon,
+  AnnotationIcon,
+} from "@heroicons/react/outline";
 
 const Header = () => {
-  const gContext = useContext(GlobalContext)
-  const [showScrolling, setShowScrolling] = useState(false)
-  const [showReveal, setShowReveal] = useState(false)
-
-  useScrollPosition(({ prevPos, currPos }) => {
-    if (currPos.y < 0) {
-      setShowScrolling(true)
-    } else {
-      setShowScrolling(false)
-    }
-    if (currPos.y < -300) {
-      setShowReveal(true)
-    } else {
-      setShowReveal(false)
-    }
-  })
   return (
-    <>
-      <SiteHeader
-        className={`site-header  site-header--absolute py-0 sticky-header site-header--menu-right dark-mode-texts 
-        ${showScrolling ? "scrolling" : ""} 
-        
-        ${
-          showReveal
-            ? "reveal-header bg-red"
-            : showReveal
-            ? "reveal-header"
-            : ""
-        }
-        `}
+    <Popover className="relative bg-white dark:bg-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex justify-between items-center border-b-2 border-gray-100 dark:border-gray-900 py-6 md:justify-start md:space-x-10">
+          <div className="flex justify-start lg:w-0 lg:flex-1">
+            <Link to="/">
+              <span className="sr-only">Gmlunesa</span>
+              <StaticImage
+                src="../../images/gmlunesa-logo.svg"
+                loading="eager"
+                width={30}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt="gmlunesa logo"
+              />
+            </Link>
+          </div>
+          <div className="-mr-2 -my-2 md:hidden">
+            <Popover.Button className="bg-white dark:bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+              <span className="sr-only">Open menu</span>
+              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+            </Popover.Button>
+          </div>
+          {/* <Popover.Group as="nav" className="hidden md:flex space-x-10 "> */}
+          <Popover.Group
+            as="nav"
+            className="hidden md:flex space-x-10 justify-end md:flex-1 lg:w-0"
+          >
+            <Link
+              to="/blog"
+              className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            >
+              Blog
+            </Link>
+            <Link
+              to="/contact"
+              className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            >
+              Contact
+            </Link>
+          </Popover.Group>
+        </div>
+      </div>
+
+      <Transition
+        as={Fragment}
+        enter="duration-200 ease-out"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="duration-100 ease-in"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
       >
-        <Container
-          fluid={gContext.header.isFluid}
-          className={gContext.header.isFluid ? "pe-lg-9 ps-lg-9" : ""}
+        <Popover.Panel
+          focus
+          className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <nav className="navbar site-navbar offcanvas-active navbar-expand-lg px-0">
-            {/* <!-- Brand Logo--> */}
-            <div className="brand-logo">
-              <Logo />
-            </div>
-            <div className="collapse navbar-collapse">
-              <div className="navbar-nav-wrapper">
-                <ul className="navbar-nav main-menu d-none d-lg-flex">
-                  {menuItems.map(
-                    (
-                      { label, isExternal = false, name, items, ...rest },
-                      index
-                    ) => {
-                      const hasSubItems = Array.isArray(items)
-                      return (
-                        <React.Fragment key={name + index}>
-                          {hasSubItems ? (
-                            <li className="nav-item dropdown" {...rest}>
-                              <a
-                                className="nav-link dropdown-toggle gr-toggle-arrow"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                href="/#"
-                                onClick={e => e.preventDefault()}
-                              >
-                                {label}
-                                <GoPlusSmall />
-                              </a>
-                              <ul className="gr-menu-dropdown dropdown-menu">
-                                {items.map((subItem, indexSub) => {
-                                  const hasInnerSubItems = Array.isArray(
-                                    subItem.items
-                                  )
-                                  return (
-                                    <React.Fragment
-                                      key={subItem.name + indexSub}
-                                    >
-                                      {hasInnerSubItems ? (
-                                        <li className="drop-menu-item dropdown">
-                                          <a
-                                            className="dropdown-toggle gr-toggle-arrow"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-expanded="false"
-                                            aria-haspopup="true"
-                                            href="/#"
-                                            onClick={e => e.preventDefault()}
-                                          >
-                                            {subItem.label}
-                                            <GoPlusSmall />
-                                          </a>
-                                          <ul className="gr-menu-dropdown dropdown-menu dropdown-right">
-                                            {subItem.items.map(
-                                              (itemInner, indexInnerMost) => (
-                                                <li
-                                                  className="drop-menu-item"
-                                                  key={
-                                                    itemInner.name +
-                                                    indexInnerMost
-                                                  }
-                                                >
-                                                  {itemInner.isExternal ? (
-                                                    <a
-                                                      href={`${itemInner.name}`}
-                                                      target="_blank"
-                                                      rel="noopener noreferrer"
-                                                    >
-                                                      {itemInner.label}
-                                                    </a>
-                                                  ) : (
-                                                    <Link
-                                                      to={`/${itemInner.name}`}
-                                                    >
-                                                      {itemInner.label}
-                                                    </Link>
-                                                  )}
-                                                </li>
-                                              )
-                                            )}
-                                          </ul>
-                                        </li>
-                                      ) : (
-                                        <li className="drop-menu-item">
-                                          {subItem.isExternal ? (
-                                            <a
-                                              href={`${subItem.name}`}
-                                              target="_blank"
-                                              rel="noopener noreferrer"
-                                            >
-                                              {subItem.label}
-                                            </a>
-                                          ) : (
-                                            <Link to={`/${subItem.name}`}>
-                                              {subItem.label}
-                                            </Link>
-                                          )}
-                                        </li>
-                                      )}
-                                    </React.Fragment>
-                                  )
-                                })}
-                              </ul>
-                            </li>
-                          ) : (
-                            <li className="nav-item" {...rest}>
-                              {isExternal ? (
-                                <a
-                                  className="nav-link"
-                                  href={`${name}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {label}
-                                </a>
-                              ) : (
-                                <Link
-                                  className="nav-link"
-                                  to={`/${name}`}
-                                  role="button"
-                                  aria-expanded="false"
-                                >
-                                  {label}
-                                </Link>
-                              )}
-                            </li>
-                          )}
-                        </React.Fragment>
-                      )
-                    }
-                  )}
-                </ul>
+          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white dark:bg-gray-800 divide-y-2 divide-gray-50">
+            <div className="pt-5 pb-6 px-5">
+              <div className="flex items-center justify-between">
+                <div>
+                  <StaticImage
+                    src="../../images/gmlunesa-logo.svg"
+                    className="h-8 w-auto"
+                    loading="eager"
+                    width={30}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="gmlunesa logo"
+                  />
+                </div>
+                <div className="-mr-2">
+                  <Popover.Button className="bg-white  dark:bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+                    <span className="sr-only">Close menu</span>
+                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                  </Popover.Button>
+                </div>
+              </div>
+              <div className="mt-6">
+                <nav className="grid gap-y-8">
+                  <Link
+                    to="blog"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <NewspaperIcon
+                      className="flex-shrink-0 h-6 w-6 text-rose-600"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base font-medium text-gray-900 dark:text-white">
+                      Blog
+                    </span>
+                  </Link>
+                  <Link
+                    to="contact"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <AnnotationIcon
+                      className="flex-shrink-0 h-6 w-6 text-rose-600"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base font-medium text-gray-900 dark:text-white">
+                      Contact
+                    </span>
+                  </Link>
+                </nav>
+              </div>
+              <div>
+                <p className="mt-6 text-center text-base font-medium text-gray-500">
+                  Want more content?{" "}
+                  <Link to="/" className="text-rose-600 hover:text-rose-500">
+                    Sign up for my newsletter
+                  </Link>
+                </p>
               </div>
             </div>
+          </div>
+        </Popover.Panel>
+      </Transition>
+    </Popover>
+  );
+};
 
-            <ToggleButton
-              className={`navbar-toggler btn-close-off-canvas ms-3 ${
-                gContext.visibleOffCanvas ? "collapsed" : ""
-              }`}
-              type="button"
-              data-toggle="collapse"
-              data-target="#mobile-menu"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              onClick={gContext.toggleOffCanvas}
-            >
-              <GoKebabVertical />
-            </ToggleButton>
-          </nav>
-        </Container>
-      </SiteHeader>
-      <Offcanvas
-        show={gContext.visibleOffCanvas}
-        onHideOffcanvas={gContext.toggleOffCanvas}
-      >
-        <NestedMenu menuItems={menuItems} />
-      </Offcanvas>
-    </>
-  )
-}
-export default Header
+export default Header;
