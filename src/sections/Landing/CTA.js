@@ -8,7 +8,12 @@ const CTA = () => {
             Learn more about my professional experience
           </span>
         </h2>
-        <div className="mt-3 lg:mt-0 lg:flex-shrink-0">
+        <a
+          href="https://linkedin.com/in/gmlunesa"
+          className="mt-3 lg:mt-0 lg:flex-shrink-0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className=" inline-flex rounded-md shadow">
             <button
               type="button"
@@ -17,7 +22,7 @@ const CTA = () => {
               Go to LinkedIn
             </button>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
