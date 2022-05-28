@@ -94,7 +94,7 @@ const Header = () => {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   <Link
-                    to="blog"
+                    to="/blog"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     <NewspaperIcon
@@ -106,7 +106,7 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
-                    to="contact"
+                    to="/contact"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     <AnnotationIcon

@@ -116,7 +116,7 @@ const Footer = () => {
             <FiGithub />
           </a>
           <a
-            href="https://linked.com/in/gmlunesa"
+            href="https://linkedin.com/in/gmlunesa"
             className="text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
             target="_blank"
             rel="noopener noreferrer"

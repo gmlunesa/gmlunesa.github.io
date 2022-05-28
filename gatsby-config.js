@@ -3,7 +3,7 @@ module.exports = {
     title: `gmlunesa`,
     description: `Official site of Goldy Mariz Lunesa, a software engineer who enjoys writing code and dreaming of electric sheep.`,
     author: `@gmlunesa`,
-    image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/assets/images/ogimage.png`,
+    image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
     url: `https://gmlunesa.com`,
     siteUrl: `https://www.gmlunesa.com`,
     keywords: ["software engineer", "net developer Philippines"],
@@ -32,8 +32,38 @@ module.exports = {
         icon: `src/images/gmlunesa-logo.svg`, // This path is relative to the root of the site.
       },
     },
-    // `gatsby-transformer-remark`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                "heading[depth=2]": "font-bold text-lg mb-4",
+                "heading[depth=3]":
+                  "font-semibold text-md mb-4 text-gray-700 dark:text-gray-100",
+                link: "text-rose-500",
+                a: "text-rose-500",
+                paragraph: "mb-2",
+                image: "my-6",
+                "list[ordered=false]": "list-disc list-inside ml-2 mt-4 mb-4",
+              },
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

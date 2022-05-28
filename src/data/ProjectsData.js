@@ -4,7 +4,7 @@ const ProjectsData = [
     name: "MeowLearn",
     description: "Learning platform with rich and complete features",
     tech: "ASP.NET MVC",
-    link: "https://github.com/gmlunesa/meowlearn",
+    link: "https://meowlearn.azurewebsites.net",
   },
   {
     type: "AI",
@@ -17,7 +17,7 @@ const ProjectsData = [
     type: "Fullstack",
     name: "Methical",
     description: "Application that generates a non-existent profile",
-    tech: "TensorFlow.js",
+    tech: "MERN",
     link: "https://methical.netlify.app",
   },
 ];
