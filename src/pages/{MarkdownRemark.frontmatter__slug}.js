@@ -9,7 +9,12 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <Seo title={frontmatter.title} description={frontmatter.description} />
+      <Seo
+        title={frontmatter.title}
+        description={frontmatter.description}
+        slug={frontmatter.slug}
+      />
+      {/** TODO: Custom image per blog article */}
       {/* <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} /> */}
@@ -75,6 +80,7 @@ export const pageQuery = graphql`
         title
         tag
         description
+        slug
       }
     }
   }

@@ -16,7 +16,11 @@ const Blog = ({
   return (
     <section>
       <Layout>
-        <Seo title="Blog" />
+        <Seo
+          title="Blog"
+          description="Official blog of gmlunesa"
+          slug="/blog"
+        />
         <BlogList edges={edges} />
       </Layout>
     </section>
