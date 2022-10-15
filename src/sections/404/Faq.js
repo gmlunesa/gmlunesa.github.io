@@ -3,7 +3,7 @@ const Faq = () => {
   return (
     <section className="bg-rose-50 dark:bg-gray-700 py-20 px-4">
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row dark:text-white">
-        <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
+        <h2 className="mr-8 mb-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
           Frequently-asked questions
         </h2>
         <dl className="w-full md:w-2/3">

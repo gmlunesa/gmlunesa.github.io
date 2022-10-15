@@ -23,11 +23,11 @@ const experiences = [
   {
     name: "As a developer",
     description:
-      "With my accomplishment in feature writing and bug fixing tasks, I maintain a balance of self-sufficiency and effective communication.",
+      "With my accomplishments in feature writing and bug fixing tasks, I maintain a balance of self-sufficiency and effective communication.",
     icon: QrcodeIcon,
   },
   {
-    name: "As hobbyist",
+    name: "As a hobbyist",
     description:
       "With the ever-evolving technological frameworks, I make sure to constantly update my knowledge and skills through theory and application.",
     icon: SparklesIcon,
