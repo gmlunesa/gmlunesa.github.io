@@ -8,7 +8,7 @@ description: ".NET 6: Global Using Directives"
 
 A long and extensive list of `using` directives at the top of a `.cs` or `.razor` file is a familiar sight as a C# developer. The more dependencies you have, the longer this list goes. Some apply the `#region` directive on this part of the code, while others utilize tinker with their IDE setting— just to be able to collapse this area.
 
-This convention has been around since .NET Framework 1.0 was launched in the year 2002. Although there is technically wrong with this, it clutters the top space of the files. Additionally, many common libraries are duplicated across multiple files even under same namespaces.
+This convention has been around since .NET Framework 1.0 was launched in the year 2002. Although there is nothing technically wrong with this, it clutters the top space of the files. Additionally, many common libraries are duplicated across multiple files even under same namespaces.
 
 As of [November 2021](https://devblogs.microsoft.com/dotnet/welcome-to-csharp-10/), developers now have an option to address this issue through C# 10's <strong>global `using` directive</strong>.
 

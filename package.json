@@ -34,6 +34,7 @@
     "gatsby-plugin-sharp": "^4.15.0",
     "gatsby-plugin-sitemap": "^5.15.0",
     "gatsby-remark-classes": "^1.0.2",
+    "gatsby-remark-images": "^6.24.0",
     "gatsby-remark-prismjs": "^6.15.0",
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-transformer-remark": "^5.15.0",
