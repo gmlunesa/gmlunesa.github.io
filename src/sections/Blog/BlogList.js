@@ -1,6 +1,5 @@
 import * as React from "react";
 import BlogLink from "../../components/BlogLink";
-const { Link } = require("gatsby");
 
 const BlogList = ({ edges }) => {
   const Posts = edges
@@ -9,7 +8,7 @@ const BlogList = ({ edges }) => {
 
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100 bg-gray-100 text-gray-800 py-20">
-      <div className="container grid grid-cols-1 mx-auto">
+      <div className="container grid grid-cols-1 md:max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold px-2">Digital garden</h1>
       </div>
       {Posts}

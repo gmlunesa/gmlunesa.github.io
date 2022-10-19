@@ -10,7 +10,7 @@ const { Link } = require("gatsby");
 const BlogLink = ({ post }) => {
   return (
     <div className="dark:bg-gray-800 dark:text-gray-50 my-4 px-2">
-      <div className="container grid grid-cols-12 mx-auto bg-gray-200 dark:bg-gray-900">
+      <div className="container grid grid-cols-12 md:max-w-7xl mx-auto bg-gray-200 dark:bg-gray-900">
         <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-8">
           <div className="flex justify-start">
             <span className="px-2 py-1 text-xs rounded-full bg-rose-400 text-gray-50 dark:text-gray-900">
