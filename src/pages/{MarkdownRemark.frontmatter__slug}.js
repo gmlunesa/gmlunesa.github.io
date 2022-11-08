@@ -28,11 +28,10 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
               {frontmatter.title}
             </h1>
             <p className="text dark:text-gray-400">
-              by &nbsp;
               <Link to="/" className="text-rose-500 dark:text-rose-400">
                 <span itemprop="name">Goldy Mariz Lunesa</span>
               </Link>
-              &nbsp; on {frontmatter.date}
+              &nbsp;◇&nbsp;{frontmatter.date}
             </p>
           </div>
           <div className="dark:text-gray-100">

@@ -50,14 +50,14 @@ module.exports = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                "heading[depth=2]": "font-bold text-lg mb-4",
+                "heading[depth=2]": "font-bold text-2xl my-4",
                 "heading[depth=3]":
-                  "font-semibold text-md my-4 text-gray-700 dark:text-gray-100",
+                  "font-semibold text-xl my-4 text-gray-700 dark:text-gray-100",
                 link: "text-rose-500",
                 a: "text-rose-500",
                 paragraph: "mb-2",
                 image: "my-6",
-                "list[ordered=false]": "list-disc list-inside ml-2 mt-4 mb-4",
+                "list[ordered=false]": "list-disc list-inside ml-1 mt-4 mb-4",
               },
             },
           },
