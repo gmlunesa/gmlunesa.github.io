@@ -34,12 +34,18 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
               &nbsp;◇&nbsp;{frontmatter.date}
             </p>
           </div>
-          <div className="dark:text-gray-100">
+          {/* <div className="dark:text-gray-100">
             <div
               className="post-body text-md"
               dangerouslySetInnerHTML={{ __html: html }}
             />
-          </div>
+          </div> */}
+          <article class="prose prose-slate prose-a:text-rose-500 prose-a:no-underline md:prose-lg dark:prose-invert prose-code:before:content-none prose-code:after:content-none">
+            <div
+              className="post-body"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </article>
           <div className="pt-12 border-t dark:border-gray-700">
             <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
               <StaticImage
