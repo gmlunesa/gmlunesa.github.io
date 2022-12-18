@@ -2,13 +2,7 @@ import { graphql, Link } from "gatsby";
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { ArrowLeftIcon } from "@heroicons/react/outline";
-import {
-  FiMail,
-  FiGithub,
-  FiLinkedin,
-  FiTwitter,
-  FiFacebook,
-} from "react-icons/fi";
+import { FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 

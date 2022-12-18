@@ -7,8 +7,6 @@ const Form = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [isAlertVisible, setIsAlertVisible] = useState(false);
 
-  const [status, setStatus] = useState({ visible: false, isError: false });
-
   const url =
     "https://script.google.com/macros/s/AKfycbzTayu1Cd3Nz3xVClk6h_IcuLEp3pmc_jTf5xuTnB80Xwm15A81IFg5EgmrjBcmmkiaMQ/exec";
 
