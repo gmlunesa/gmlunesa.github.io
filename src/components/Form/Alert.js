@@ -2,9 +2,9 @@ import React from "react";
 
 const Alert = ({ status }) => {
   return (
-    <div className="flex my-3 shadow gap-6 rounded-lg overflow-hidden divide-x max-w-2xl bg-white dark:bg-gray-800 dark:text-gray-100 divide-gray-700">
+    <div className="flex mt-4 shadow gap-6 rounded-lg overflow-hidden divide-x max-w-2xl bg-white dark:bg-gray-800 dark:text-gray-100 divide-gray-700">
       <div
-        className={`flex flex-1 flex-col p-4 border-l-8 ${
+        className={`flex flex-1 flex-col p-3 border-l-8 ${
           status ? `border-green-600` : `border-red-600`
         }`}
       >
