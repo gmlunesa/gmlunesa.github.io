@@ -1,13 +1,9 @@
 import * as React from "react";
-import {
-  ArrowRightIcon,
-  UserIcon,
-  CalendarIcon,
-} from "@heroicons/react/outline";
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const { Link } = require("gatsby");
 
 const BlogLink = ({ post }) => {
+  const image = getImage(post.frontmatter.featuredImage);
   return (
     <Link
       to={post.frontmatter.slug}
@@ -15,13 +11,9 @@ const BlogLink = ({ post }) => {
                       dark:bg-gray-900 dark:border-gray-700"
     >
       <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-purple-200 via-fuchsia-400 to-rose-500"></span>
-      <img
-        alt={`Cover image for ${post.frontmatter.title} blog post by Goldy Mariz Lunesa`}
-        src={
-          post.frontmatter.featuredImage
-            ? post.frontmatter.featuredImage.publicURL
-            : `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`
-        }
+      <GatsbyImage
+        alt={`Cover for ${post.frontmatter.title} blog post by Goldy Mariz Lunesa`}
+        image={image}
         className="h-56 w-full object-cover"
       />
 

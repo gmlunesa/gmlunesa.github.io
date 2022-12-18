@@ -10,9 +10,9 @@ const Blog = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges
-    .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map((edge) => <BlogLink key={edge.node.id} post={edge.node} />);
+  // const Posts = edges
+  //   .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+  //   .map((edge) => <BlogLink key={edge.node.id} post={edge.node} />);
   return (
     <section>
       <Layout>
@@ -49,6 +49,9 @@ export const pageQuery = graphql`
                 fluid {
                   src
                 }
+              }
+              childImageSharp {
+                gatsbyImageData(width: 400)
               }
             }
           }
