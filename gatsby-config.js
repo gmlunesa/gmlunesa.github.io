@@ -2,11 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `gmlunesa`,
     description: `Official site of Goldy Mariz Lunesa, a software engineer who enjoys writing code and dreaming of electric sheep.`,
-    author: `@gmlunesa`,
+    author: `Goldy Mariz Lunesa | @gmlunesa`,
     image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
     url: `https://gmlunesa.com`,
     siteUrl: `https://www.gmlunesa.com`,
-    keywords: ["software engineer", "net developer Philippines"],
+    keywords: [
+      "software engineer",
+      "net developer Philippines",
+      "Goldy Mariz Lunesa",
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -24,6 +24,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.3",
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "gatsby": "^4.15.1",
     "gatsby-plugin-google-gtag": "^4.15.0",
     "gatsby-plugin-image": "^2.15.0",

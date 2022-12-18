@@ -40,12 +40,12 @@ const Faq = () => {
               I would like to improve on my frontend design skills! I have
               enrolled in a couple of courses that cover topics regarding the
               following:
-              <ul className="list-disc list-inside ml-2 mt-2">
-                <li>Web design</li>
-                <li>User Interface (UI)</li>
-                <li>User Experience (UX)</li>
-              </ul>
             </p>
+            <ul className="list-disc list-inside ml-2 mt-2">
+              <li>Web design</li>
+              <li>User Interface (UI)</li>
+              <li>User Experience (UX)</li>
+            </ul>
           </dd>
         </dl>
       </div>

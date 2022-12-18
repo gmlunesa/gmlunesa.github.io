@@ -12,11 +12,14 @@ const Hero = () => {
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-20 lg:flex-row lg:justify-around">
         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-            Hello, I’m Goldy Mariz.
+            Hello, I’m{" "}
+            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-rose-600">
+              Goldy Mariz
+            </span>
+            .
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12">
-            Working as a{" "}
-            <span className="text-rose-600">software engineer</span>{" "}
+            Working as a software engineer{" "}
             <br className="hidden md:inline lg:hidden" />
             with considerable experience in building robust and complex
             applications
@@ -27,7 +30,7 @@ const Hero = () => {
             {/* Start */}
             <div className="flex flex-col">
               <div className="flex flex-row mb-3">
-                <div className="shadow select-none cursor-pointer bg-white bg-rose-500 rounded-md flex flex-1 items-center justify-start p-4">
+                <div className="shadow select-none cursor-pointer bg-rose-500 rounded-md flex flex-1 items-center justify-start p-4">
                   <div className="flex flex-col w-10 h-10 items-center mr-4">
                     <a href="/" className="block relative">
                       <StaticImage
