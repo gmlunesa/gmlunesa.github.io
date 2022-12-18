@@ -8,7 +8,7 @@ import Faq from "../sections/404/Faq";
 const Contact = () => {
   return (
     <Layout>
-      <Seo title="Contact" />
+      <Seo title="Contact | Goldy Mariz Lunesa" />
       <Hero />
       <Faq />
     </Layout>

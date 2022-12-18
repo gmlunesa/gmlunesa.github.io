@@ -8,7 +8,7 @@ import Faq from "../sections/404/Faq";
 const NotFoundPage = () => {
   return (
     <Layout>
-      <Seo title="404" />
+      <Seo title="404 | Goldy Mariz Lunesa" />
       <Hero />
       <Faq />
     </Layout>

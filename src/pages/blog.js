@@ -17,7 +17,7 @@ const Blog = ({
     <section>
       <Layout>
         <Seo
-          title="Blog"
+          title="Blog | Goldy Mariz Lunesa"
           description="Official blog of gmlunesa"
           slug="/blog"
         />
@@ -37,10 +37,20 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 200)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
+            dateOriginal: date
             slug
             title
             tag
+            tags
             description
+            featuredImage {
+              publicURL
+              childrenImageSharp {
+                fluid {
+                  src
+                }
+              }
+            }
           }
         }
       }
