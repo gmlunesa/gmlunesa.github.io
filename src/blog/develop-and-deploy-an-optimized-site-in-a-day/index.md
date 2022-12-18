@@ -3,7 +3,9 @@ title: "Develop and deploy an optimized site in a day"
 slug: "/blog/develop-and-deploy-an-optimized-site-in-a-day"
 date: "2020-10-30"
 tag: "Gatsby"
+tags: ["Gatsby", "React"]
 description: "Getting an optimized website within 24 hours is possible, with the right web technology."
+featuredImage: "./images/featuredImage.png"
 ---
 
 Days ago, I decided that my <a href="https://gmlunesa.com" target="_blank" rel="noreferrer">personal website</a> needed updating, as some things weren't working anymore. The <a href="https://gmlunesa.com/archive-gmlunesa-website" target="_blank" rel="noreferrer">old version</a> was written in plain HTML and CSS (as I am a front-end newbie), and I wanted to try out the popular Javascript libraries everyone seems to be talking about— React and Vue. As I did my research, I discovered more frameworks built on top of those, as well as a `technology` called static site generators. If you want to build a website fast without compromising speed and quality, then this article might be for you.

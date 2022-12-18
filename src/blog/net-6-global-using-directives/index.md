@@ -3,7 +3,9 @@ title: ".NET 6: Global Using Directives"
 slug: "/blog/net-6-global-using-directives"
 date: "2021-12-11"
 tag: "C#"
+tags: [".NET", "C#"]
 description: ".NET 6: Global Using Directives"
+featuredImage: "./images/featuredImage.png"
 ---
 
 A long and extensive list of `using` directives at the top of a `.cs` or `.razor` file is a familiar sight as a C# developer. The more dependencies you have, the longer this list goes. Some apply the `#region` directive on this part of the code, while others utilize tinker with their IDE setting— just to be able to collapse this area.

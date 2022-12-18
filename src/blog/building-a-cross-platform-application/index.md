@@ -3,7 +3,9 @@ title: "Building a cross platform application with .NET MAUI"
 slug: "/blog/building-a-cross-platform-application"
 date: "2022-10-19"
 tag: "C#"
+tags: [".NET", "Android"]
 description: "Building a cross platform application with .NET MAUI"
+featuredImage: "./images/featuredImage.png"
 ---
 
 In today's blog, we will be creating a simple cross-platform application with .NET MAUI. I'll be providing a general walk-through and useful resources so you can build your own app as well!
