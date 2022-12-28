@@ -57,7 +57,7 @@ const About = () => {
               {experiences.map((experience) => (
                 <div key={experience.name} className="relative">
                   <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-rose-500 text-white">
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-tr from-purple-400 via-rose-400 to-rose-500 text-white">
                       <experience.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">

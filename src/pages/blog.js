@@ -2,7 +2,6 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import BlogLink from "../components/BlogLink";
 import BlogList from "../sections/Blog/BlogList";
 
 const Blog = ({

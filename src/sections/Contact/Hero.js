@@ -15,7 +15,7 @@ const Hero = () => {
               <li>
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 text-white bg-rose-500 rounded-md">
+                    <div className="flex items-center justify-center w-12 h-12 text-white bg-gradient-to-tr from-purple-400 via-rose-400 to-rose-500 rounded-md">
                       <UsersIcon className="flex-shrink-0 h-6 w-6" />
                     </div>
                   </div>
@@ -32,7 +32,7 @@ const Hero = () => {
               <li className="mt-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 text-white bg-rose-500 rounded-md">
+                    <div className="flex items-center justify-center w-12 h-12 text-white bg-gradient-to-tr from-purple-400 via-rose-400 to-rose-500 rounded-md">
                       <CodeIcon className="flex-shrink-0 h-6 w-6" />
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const Hero = () => {
               <li className="mt-10">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 text-white bg-rose-500 rounded-md">
+                    <div className="flex items-center justify-center w-12 h-12 text-white bg-gradient-to-tr from-purple-400 via-rose-400 to-rose-500 rounded-md">
                       <StarIcon className="flex-shrink-0 h-6 w-6" />
                     </div>
                   </div>

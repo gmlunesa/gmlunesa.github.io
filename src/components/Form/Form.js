@@ -32,7 +32,6 @@ const Form = () => {
       });
 
       const response = await res.json();
-      console.log(response);
 
       if (response.status === "OK") {
         setIsSending(false);

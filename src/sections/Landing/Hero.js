@@ -30,7 +30,7 @@ const Hero = () => {
             {/* Start */}
             <div className="flex flex-col">
               <div className="flex flex-row mb-3">
-                <div className="shadow select-none cursor-pointer bg-rose-500 rounded-md flex flex-1 items-center justify-start p-4">
+                <div className="shadow select-none cursor-pointer bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-rose-700 via-pink-500 to-rose-800 rounded-md flex flex-1 items-center justify-start p-4">
                   <div className="flex flex-col w-10 h-10 items-center mr-4">
                     <a href="/" className="block relative">
                       <StaticImage
