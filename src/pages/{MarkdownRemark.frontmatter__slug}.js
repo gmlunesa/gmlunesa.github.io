@@ -43,19 +43,19 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
               </time>
             </p>
           </div>
-          <article className="prose prose-slate prose-a:text-rose-500 prose-a:no-underline prose-img:rounded-md md:prose-lg dark:prose-invert prose-code:before:content-none prose-code:after:content-none">
+          <div className="prose prose-slate prose-a:underline prose-a:decoration-rose-500 hover:prose-a:text-rose-500 hover:prose-a:no-underline  prose-img:rounded-lg md:prose-lg dark:prose-invert prose-code:before:content-none prose-code:after:content-none">
             <div
               className="post-body"
               dangerouslySetInnerHTML={{ __html: html }}
             />
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-col items-center gap-4 rounded-lg bg-rose-500 p-6 shadow-lg sm:flex-row sm:justify-between">
+              <div className="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-rose-400 via-rose-500 to-fuchsia-500 p-6 shadow-lg sm:flex-row sm:justify-between">
                 <strong className="text-xl text-center text-white lg:text-left">
                   Liked this article? Share now!
                 </strong>
                 <div className="flex gap-2">
                   <a
-                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-rose-50 hover:border-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
                     href={`https://twitter.com/intent/tweet?text=Just read this article from @gmlunesa. Check it out at https://gmlunesa.com${frontmatter.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -63,7 +63,7 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
                     <FiTwitter />
                   </a>
                   <a
-                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-rose-50 hover:border-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://gmlunesa.com${frontmatter.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
                     <FiFacebook />
                   </a>
                   <a
-                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+                    className="inline-flex items-center rounded-full border-2 border-white bg-white p-2 text-rose-600 hover:bg-rose-50 hover:border-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
                     href={`https://www.linkedin.com/shareArticle?mini=true&url=https://gmlunesa.com${frontmatter.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -81,8 +81,7 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
                 </div>
               </div>
             </div>
-          </article>
-
+          </div>
           <div className="pt-12 border-t dark:border-gray-700">
             <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
               <StaticImage

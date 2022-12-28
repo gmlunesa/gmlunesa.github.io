@@ -1,2 +1,2 @@
 import "./src/styles/global.css";
-import "prismjs/themes/prism-tomorrow.css";
+import "./src/themes/prism-vsc-dark-plus.css";
