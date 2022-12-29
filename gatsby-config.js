@@ -1,3 +1,45 @@
+const moment = require("moment");
+// Query for all blog posts
+const rssPostQuery = `
+{
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 200)
+        html
+        frontmatter {
+          date
+          slug
+          title
+          tags
+          description
+        }
+      }
+    }
+  }
+}
+
+`;
+
+const createRssPost = (edge, site) => {
+  const { node } = edge;
+  return Object.assign({}, edge.node.frontmatter, {
+    description: edge.node.description,
+    date: moment.utc(`${node.frontmatter.date}`, "YYYY/MM/DDTHH:mmZ").format(),
+    url: site.siteMetadata.siteUrl + node.frontmatter.slug,
+    guid: site.siteMetadata.siteUrl + node.frontmatter.slug,
+    custom_elements: [
+      {
+        "content:encoded": edge.node.html.replace(
+          /(?<=\"|\s)\/static\//g,
+          `${site.siteMetadata.siteUrl}\/static\/`
+        ),
+      },
+    ],
+  });
+};
+
 module.exports = {
   siteMetadata: {
     title: `gmlunesa`,
@@ -5,7 +47,7 @@ module.exports = {
     author: `Goldy Mariz Lunesa | @gmlunesa`,
     image: `https://raw.githubusercontent.com/gmlunesa/gmlunesa.github.io/development/src/images/ogimage.png`,
     url: `https://gmlunesa.com`,
-    siteUrl: `https://www.gmlunesa.com`,
+    siteUrl: `https://gmlunesa.com`,
     keywords: [
       "software engineer",
       "net developer Philippines",
@@ -42,6 +84,23 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/src/blog`,
+      },
+    },
+    {
+      // Add this object to your "plugins" array:
+      resolve: "gatsby-plugin-feed",
+      options: {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map((e) => createRssPost(e, site)),
+            query: rssPostQuery,
+            output: "/rss.xml",
+            title: "Goldy Mariz Lunesa's Blog",
+            description:
+              "A collection of Goldy Mariz Lunesa's digitized thoughts and musings, now accessible over the cyber web space.",
+          },
+        ],
       },
     },
 
