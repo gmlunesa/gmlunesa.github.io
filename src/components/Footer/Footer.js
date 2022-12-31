@@ -7,7 +7,7 @@ import { FiMail, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
-      <div className="md:flex md:justify-between">
+      <div className="md:flex md:justify-between mx-4">
         <div className="mb-6 md:mb-0">
           <Link to="/" className="flex items-center">
             <StaticImage
@@ -25,6 +25,23 @@ const Footer = () => {
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Personal
+            </h2>
+            <ul className="text-gray-600 dark:text-gray-400">
+              {/* <li className="mb-4">
+                <Link to="/about" className="hover:text-rose-600">
+                  About
+                </Link>
+              </li> */}
+              <li>
+                <Link to="/goals" className="hover:text-rose-600">
+                  Goals
+                </Link>
+              </li>
+            </ul>
+          </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Quick Links

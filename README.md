@@ -15,9 +15,11 @@ My official personal website. Built with [@gatsbyjs](https://github.com/gatsbyjs
 
 ## Features and Functionalities
 
-- ⚡ Lightning fast performance, based on Google PageSpeed Insights
-- ⬇ Markdown-based blog, built from scratch
+- ⏩ Blazing fast performance with build time generation [@gatsbyjs](https://github.com/gatsbyjs)
+- 📊 Dynamic page creation with File System Route API and [@graphql](https://github.com/graphql)
+- 🤑 No cost hosting on [@Github Pages](https://pages.github.com/)
 - 💄 Clean and uniform layouts with [@tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+- ⚡ 99 Score on [@Google PageSpeed Insights](https://pagespeed.web.dev/)
 
 ## Timeline
 
@@ -25,8 +27,16 @@ My official personal website. Built with [@gatsbyjs](https://github.com/gatsbyjs
 
 The 2022 is the latest and updated version, which includes:
 
-- Agency-style theme
-- Formal and professional tone
+- 📃 Agency-style theme
+- 💼 Formal and professional tone
+
+Pages:
+
+- Home
+- Blog Directory
+- Blog pages (Markdown-based, generated automatically)
+- Contact
+- Goals
 
 ### 2019
 
