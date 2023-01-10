@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 
 const LatestBlog = ({ post: { node } }) => {
-  console.log(node);
   return (
     <section className="bg-white dark:bg-gray-800 py-20 px-4">
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row dark:text-white justify-around">
@@ -37,7 +36,7 @@ const LatestBlog = ({ post: { node } }) => {
             <article className="rounded-xl bg-gradient-to-r from-purple-300 via-fuchsia-500 to-rose-600 p-0.5 shadow-xl transition hover:shadow-sm">
               <div className="rounded-[10px] bg-white dark:bg-gray-800 px-6 py-14">
                 <time
-                  datetime={node.frontmatter.dateOriginal}
+                  dateTime={node.frontmatter.dateOriginal}
                   className="block text-xs text-gray-600 dark:text-gray-400"
                 >
                   {node.frontmatter.date}

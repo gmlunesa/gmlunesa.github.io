@@ -87,7 +87,6 @@ module.exports = {
       },
     },
     {
-      // Add this object to your "plugins" array:
       resolve: "gatsby-plugin-feed",
       options: {
         feeds: [
