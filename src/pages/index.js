@@ -12,7 +12,7 @@ import LatestBlog from "../sections/Landing/LatestBlog";
 
 const IndexPage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allHashNodePost: { edges },
   },
 }) => (
   <>
@@ -31,31 +31,17 @@ export default IndexPage;
 
 export const latestBlogQuery = graphql`
   query {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1
-    ) {
+    allHashNodePost(sort: { fields: [dateAdded], order: DESC }) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 200)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            dateOriginal: date
-            slug
-            title
-            tag
-            tags
-            description
-            featuredImage {
-              publicURL
-              childrenImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
+          dateAdded
+          brief
+          slug
+          title
+          readingTime {
+            text
           }
+          _id
         }
       }
     }
