@@ -3,6 +3,15 @@ import { Link } from "gatsby";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 
 const LatestBlog = ({ post: { node } }) => {
+  const formatDate = (date) => {
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+
+    return new Date(date).toLocaleDateString(undefined, options);
+  };
   return (
     <section className="bg-white dark:bg-gray-800 py-20 px-4">
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row dark:text-white justify-around">
@@ -32,21 +41,21 @@ const LatestBlog = ({ post: { node } }) => {
               <ArrowRightIcon className="w-6 h-6" />
             </Link>
           </div>
-          <Link to={node.frontmatter.slug} className="relative mt-10 lg:mt-0">
+          <Link to={node.slug} className="relative mt-10 lg:mt-0">
             <article className="rounded-xl bg-gradient-to-r from-purple-300 via-fuchsia-500 to-rose-600 p-0.5 shadow-xl transition hover:shadow-sm">
               <div className="rounded-[10px] bg-white dark:bg-gray-800 px-6 py-14">
                 <time
-                  dateTime={node.frontmatter.dateOriginal}
+                  dateTime={node.dateAdded}
                   className="block text-xs text-gray-600 dark:text-gray-400"
                 >
-                  {node.frontmatter.date}
+                  {formatDate(node.dateAdded)}
                 </time>
 
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white ">
-                  {node.frontmatter.title}
+                  {node.title}
                 </h3>
 
-                <div className="my-4 flex flex-wrap gap-1">
+                {/* <div className="my-4 flex flex-wrap gap-1">
                   {node.frontmatter.tags.map((tag) => (
                     <span
                       className="whitespace-nowrap rounded-full bg-rose-100 text-rose-600 px-2.5 py-0.5 text-xs
@@ -55,7 +64,7 @@ const LatestBlog = ({ post: { node } }) => {
                       {tag}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </article>
           </Link>
