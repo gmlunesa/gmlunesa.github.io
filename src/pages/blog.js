@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import BlogList from "../sections/Blog/BlogList";
+import List from "../sections/List/List";
 
 const Blog = ({
   data: {
@@ -17,7 +17,7 @@ const Blog = ({
           description="Official blog of gmlunesa"
           slug="/blog"
         />
-        <BlogList edges={edges} />
+        <List edges={edges} isBlog={true} />
       </Layout>
     </section>
   );

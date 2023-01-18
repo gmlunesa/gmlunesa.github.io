@@ -10,6 +10,7 @@ import {
   XIcon,
   NewspaperIcon,
   AnnotationIcon,
+  SparklesIcon,
 } from "@heroicons/react/outline";
 
 const Header = () => {
@@ -46,6 +47,12 @@ const Header = () => {
               className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
             >
               Blog
+            </Link>
+            <Link
+              to="/projects"
+              className="text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            >
+              Projects
             </Link>
             <Link
               to="/contact"
@@ -106,6 +113,18 @@ const Header = () => {
                     </span>
                   </Link>
                   <Link
+                    to="/projects"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <SparklesIcon
+                      className="flex-shrink-0 h-6 w-6 text-rose-600"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base font-medium text-gray-900 dark:text-white">
+                      Projects
+                    </span>
+                  </Link>
+                  <Link
                     to="/contact"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
@@ -119,14 +138,14 @@ const Header = () => {
                   </Link>
                 </nav>
               </div>
-              <div>
+              {/* <div>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Want more content?{" "}
-                  <Link to="/" className="text-rose-600 hover:text-rose-500">
+                  <a href="/" className="text-rose-600 hover:text-rose-500">
                     Sign up for my newsletter
-                  </Link>
+                  </a>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </Popover.Panel>
