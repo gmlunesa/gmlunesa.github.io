@@ -23,9 +23,17 @@ My official personal website. Built with [@gatsbyjs](https://github.com/gatsbyjs
 
 ## Timeline
 
+### 2023
+
+The `2023` version is the latest and updated version with the following updates:
+
+- Blog is now hosted on [Hashnode](https://blog.gmlunesa.com) for better discoverability.
+- Projects page is introduced with Markdown-based files and generated automatically.
+- Goals page is added to keep track of my 2023 goals, integrated with Notion.
+
 ### 2022
 
-The 2022 is the latest and updated version, which includes:
+The `2022` version is a complete rewrite from scratch, which includes:
 
 - 📃 Agency-style theme
 - 💼 Formal and professional tone
@@ -38,9 +46,9 @@ Pages:
 - Contact
 - Goals
 
-### 2019
+### 2020
 
-The 2020 version is bootstrapped with [gatsby-starter-personal-portfolio](https://github.com/gmlunesa/gatsby-starter-personal-portfolio).
+The `2020` version is bootstrapped with [gatsby-starter-personal-portfolio](https://github.com/gmlunesa/gatsby-starter-personal-portfolio).
 
 Archived pages:
 
@@ -50,4 +58,4 @@ Archived pages:
 
 ### 2018
 
-The 2018 version is a minimalist in both style and development. No frameworks used, visit the code in the Github repository [here](https://github.com/gmlunesa/archive-gmlunesa-website).
+The `2018` version is a minimalist in both style and development. No frameworks used, visit the code in the Github repository [here](https://github.com/gmlunesa/archive-gmlunesa-website).
