@@ -7,7 +7,7 @@ import Seo from "../components/Seo";
 import Hero from "../sections/landing/Hero";
 import About from "../sections/Landing/About";
 import Cta from "../sections/Landing/CTA";
-import Projects from "../sections/landing/Projects";
+import Projects from "../sections/Landing/Projects";
 import LatestBlog from "../sections/Landing/LatestBlog";
 
 const IndexPage = ({

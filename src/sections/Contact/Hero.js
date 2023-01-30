@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row dark:text-white">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center">
           <div className="lg:col-start-2 md:pl-20">
-            <h2 className="text-3xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-white sm:leading-9">
+            <h2 className="text-3xl font-bold leading-8 tracking-tight text-gray-900 dark:text-white sm:leading-9">
               Contact me for...
             </h2>
             <ul className="mt-10">

@@ -41,7 +41,12 @@ const LatestBlog = ({ post: { node } }) => {
               <ArrowRightIcon className="w-6 h-6" />
             </Link>
           </div>
-          <Link to={node.slug} className="relative mt-10 lg:mt-0">
+          <a
+            href={`https://blog.gmlunesa.com/${node.slug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative mt-10 lg:mt-0"
+          >
             <article className="rounded-xl bg-gradient-to-r from-purple-300 via-fuchsia-500 to-rose-600 p-0.5 shadow-xl transition hover:shadow-sm">
               <div className="rounded-[10px] bg-white dark:bg-gray-800 px-6 py-14">
                 <time
@@ -67,7 +72,7 @@ const LatestBlog = ({ post: { node } }) => {
                 </div> */}
               </div>
             </article>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

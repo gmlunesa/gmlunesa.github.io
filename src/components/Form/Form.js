@@ -69,9 +69,7 @@ const Form = () => {
       className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow bg-gray-50 dark:bg-gray-900 ng-untouched ng-pristine ng-valid"
       onSubmit={handleOnSubmit}
     >
-      <h2 className="w-full text-3xl font-extrabold leading-tight">
-        Get in touch
-      </h2>
+      <h2 className="w-full text-3xl font-bold leading-tight">Get in touch</h2>
       <div>
         <label htmlFor="name" className="block mb-1 ml-1">
           Name

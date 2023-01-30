@@ -28,7 +28,7 @@ const List = ({ edges, isBlog }) => {
             {isBlog
               ? `A collection of my digitized thoughts and musings, now accessible
             over the cyber web space.`
-              : `A collection of my personal projects, created in my free time.`}
+              : `A collection of my personal projects, as I keep up with new releases and innovations.`}
           </p>
         </div>
 
