@@ -33,7 +33,7 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
             </h1>
 
             <ul className="flex flex-wrap items-center justify-center mb-6 text-gray-600 dark:text-gray-400">
-              {frontmatter.tags.map((tag) => (
+              {frontmatter.tags?.map((tag) => (
                 <li className="border-r-2 ml-2 pr-2 hover:underline">{tag}</li>
               ))}
               <li className="ml-2 hover:underline md:mr-6">
@@ -44,7 +44,7 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
             </ul>
             <div className="flex space-x-4 justify-center">
               <a
-                href={frontmatter.links[0]}
+                href={frontmatter.links ? frontmatter.links[0] : ""}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl bg-rose-100 text-rose-600 px-4 py-2 text-s mx-2
@@ -53,7 +53,7 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
                 View Source Code
               </a>
               <a
-                href={frontmatter.links[1]}
+                href={frontmatter.links ? frontmatter.links[1] : ""}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl bg-rose-600 text-rose-100 px-4 py-2 text-s mx-2
@@ -154,11 +154,6 @@ export const pageQuery = graphql`
               layout: CONSTRAINED
               transformOptions: { cropFocus: CENTER }
             )
-          }
-          childrenImageSharp {
-            fluid {
-              src
-            }
           }
         }
       }
