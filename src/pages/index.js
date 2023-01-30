@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 // Components
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import Hero from "../sections/landing/Hero";
+import Hero from "../sections/Landing/Hero";
 import About from "../sections/Landing/About";
 import Cta from "../sections/Landing/CTA";
 import Projects from "../sections/Landing/Projects";
