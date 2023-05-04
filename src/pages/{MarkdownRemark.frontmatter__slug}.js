@@ -34,10 +34,12 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
 
             <ul className="flex flex-wrap items-center justify-center mb-6 text-gray-600 dark:text-gray-400">
               {frontmatter.tags?.map((tag) => (
-                <li className="border-r-2 ml-2 pr-2 hover:underline">{tag}</li>
+                <li key={tag} className="border-r-2 ml-2 pr-2 hover:underline">
+                  {tag}
+                </li>
               ))}
               <li className="ml-2 hover:underline md:mr-6">
-                <time datetime={frontmatter.dateOriginal}>
+                <time dateTime={frontmatter.dateOriginal}>
                   {frontmatter.date}
                 </time>
               </li>
@@ -105,6 +107,7 @@ export default function ProjectTemplate({ data: { markdownRemark } }) {
           <div className="pt-12 border-t dark:border-gray-700">
             <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
               <StaticImage
+                alt="Image for @gmlunesa card"
                 src="../images/landing/gmlunesa.jpg"
                 className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-700"
               />

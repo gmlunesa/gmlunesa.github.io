@@ -19,7 +19,7 @@ const ProjectLink = ({ post }) => {
 
       <div className="p-4 sm:p-6">
         <time
-          datetime={post.frontmatter.dateOriginal}
+          dateTime={post.frontmatter.dateOriginal}
           className="block text-xs text-gray-600 dark:text-gray-400"
         >
           {post.frontmatter.date}
@@ -35,6 +35,7 @@ const ProjectLink = ({ post }) => {
         <div className="my-4 flex flex-wrap gap-1">
           {post.frontmatter.tags.map((tag) => (
             <span
+              key={tag}
               className="whitespace-nowrap rounded-full bg-rose-100 text-rose-600 px-2.5 py-0.5 text-xs
                               dark:text-rose-100 dark:bg-rose-800"
             >
