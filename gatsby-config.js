@@ -86,10 +86,21 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
+    // {
+    //   resolve: "gatsby-source-hashnode",
+    //   options: {
+    //     username: "gmlunesa",
+    //   },
+    // },
     {
-      resolve: "gatsby-source-hashnode",
+      resolve: "gatsby-source-graphql",
       options: {
-        username: "gmlunesa",
+        // Arbitrary name for the remote schema Query type
+        typeName: "Hashnode",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "hashnode",
+        // Url to query from
+        url: "https://gql.hashnode.com",
       },
     },
     // {

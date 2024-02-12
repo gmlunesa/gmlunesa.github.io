@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 // Components
 import Layout from "../components/Layout";
@@ -10,40 +10,45 @@ import Cta from "../sections/Landing/CTA";
 import Projects from "../sections/Landing/Projects";
 import LatestBlog from "../sections/Landing/LatestBlog";
 
-const IndexPage = ({
-  data: {
-    allHashNodePost: { edges },
-  },
-}) => (
-  <>
-    <Layout>
-      <Seo title="Home | Goldy Mariz Lunesa" />
-      <Hero />
-      <About />
-      <Cta />
-      <Projects />
-      <LatestBlog post={edges[0]} />
-    </Layout>
-  </>
-);
-
-export default IndexPage;
-
-export const latestBlogQuery = graphql`
-  query {
-    allHashNodePost(sort: { fields: [dateAdded], order: DESC }) {
-      edges {
-        node {
-          dateAdded
-          brief
-          slug
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      hashnode {
+        publication(host: "blog.gmlunesa.com") {
           title
-          readingTime {
-            text
+          posts(first: 10) {
+            edges {
+              node {
+                id
+                publishedAt
+                title
+                brief
+                url
+                slug
+                readTimeInMinutes
+                coverImage {
+                  url
+                }
+              }
+            }
           }
-          _id
         }
       }
     }
-  }
-`;
+  `);
+  console.log(data);
+  return (
+    <>
+      <Layout>
+        <Seo title="Home | Goldy Mariz Lunesa" />
+        <Hero />
+        <About />
+        <Cta />
+        <Projects />
+        <LatestBlog post={data.hashnode.publication.posts.edges[0]} />
+      </Layout>
+    </>
+  );
+};
+
+export default IndexPage;

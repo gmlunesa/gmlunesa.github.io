@@ -1,14 +1,36 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import List from "../sections/List/List";
 
-const Blog = ({
-  data: {
-    allHashNodePost: { edges },
-  },
-}) => {
+const Blog = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      hashnode {
+        publication(host: "blog.gmlunesa.com") {
+          title
+          posts(first: 10) {
+            edges {
+              node {
+                id
+                publishedAt
+                title
+                brief
+                url
+                slug
+                readTimeInMinutes
+                coverImage {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  console.log(data.hashnode.publication.posts.edges);
   return (
     <section>
       <Layout>
@@ -17,34 +39,10 @@ const Blog = ({
           description="Official blog of gmlunesa"
           slug="/blog"
         />
-        <List edges={edges} isBlog={true} />
+        <List edges={data.hashnode.publication.posts.edges} isBlog={true} />
       </Layout>
     </section>
   );
 };
 
 export default Blog;
-
-export const pageQuery = graphql`
-  query {
-    allHashNodePost(sort: { fields: [dateAdded], order: DESC }) {
-      edges {
-        node {
-          dateAdded
-          brief
-          slug
-          title
-          readingTime {
-            text
-          }
-          coverImage {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
-            }
-          }
-          _id
-        }
-      }
-    }
-  }
-`;

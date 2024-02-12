@@ -19,11 +19,12 @@ const GoalList = () => {
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100 bg-gray-100 text-gray-800">
       <div className="mx-auto max-w-screen-lg px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="font-bold text-3xl text-center">2023 Goals</h2>
+        <h2 className="font-bold text-3xl text-center">2024 Goals</h2>
 
         <p className="mt-4 text-gray-600 dark:text-gray-400 text-center">
-          Two thousand and twenty-three, a year focused on growth and
-          productivity.
+          {/* Two thousand and twenty-three, a year focused on growth and
+          productivity. */}
+          Two thousand and twenty-four, a year to aim for more.
         </p>
 
         {GoalsData.map((goal) => (

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
 const BlogLink = ({ post }) => {
   const image = getImage(post.coverImage);
@@ -22,18 +22,19 @@ const BlogLink = ({ post }) => {
                       dark:bg-gray-900 dark:border-gray-700"
     >
       <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-purple-200 via-fuchsia-400 to-rose-500"></span>
-      <GatsbyImage
+      <img
         alt={`Cover for ${post.title} blog post by Goldy Mariz Lunesa`}
-        image={image}
+        src={post.coverImage.url}
         className="h-56 w-full object-cover"
+        loading="lazy"
       />
 
       <div className="p-4 sm:p-6">
         <time
-          datetime={post.dateAdded}
+          dateTime={post.publishedAt}
           className="block text-xs text-gray-600 dark:text-gray-400"
         >
-          {formatDate(post.dateAdded)}
+          {formatDate(post.publishedAt)}
         </time>
         <h3 className="text-xl font-bold text-gray-900 dark:text-white ">
           {post.title}

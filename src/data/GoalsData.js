@@ -2,12 +2,12 @@ const GoalsData = [
   {
     name: "Blog",
     description: "Blog articles",
-    target: 24,
+    target: 12,
   },
   {
     name: "Project",
     description: "Tech projects",
-    target: 4,
+    target: 3,
   },
   {
     name: "Course",

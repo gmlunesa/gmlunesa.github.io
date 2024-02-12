@@ -5,9 +5,9 @@ import ProjectLink from "../../components/ProjectLink";
 const List = ({ edges, isBlog }) => {
   let Posts = [];
   if (isBlog) {
-    Posts = edges
-      .filter((edge) => !!edge.node.dateAdded) // You can filter your posts based on some criteria
-      .map((edge) => <BlogLink key={edge.node._id} post={edge.node} />);
+    Posts = edges.map((edge) => (
+      <BlogLink key={edge.node.id} post={edge.node} />
+    ));
   } else {
     Posts = edges
       .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria

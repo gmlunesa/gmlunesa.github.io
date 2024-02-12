@@ -11,7 +11,7 @@ const Goals = () => {
       <Layout>
         <Seo
           title="Goals | Goldy Mariz Lunesa"
-          description="2023 goals of Goldy Mariz Lunesa @gmlunesa"
+          description="2024 goals of Goldy Mariz Lunesa @gmlunesa"
           slug="/goals"
         />
 

@@ -50,10 +50,10 @@ const LatestBlog = ({ post: { node } }) => {
             <article className="rounded-xl bg-gradient-to-r from-purple-300 via-fuchsia-500 to-rose-600 p-0.5 shadow-xl transition hover:shadow-sm">
               <div className="rounded-[10px] bg-white dark:bg-gray-800 px-6 py-14">
                 <time
-                  dateTime={node.dateAdded}
+                  dateTime={node.publishedAt}
                   className="block text-xs text-gray-600 dark:text-gray-400"
                 >
-                  {formatDate(node.dateAdded)}
+                  {formatDate(node.publishedAt)}
                 </time>
 
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white ">
